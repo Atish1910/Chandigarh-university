@@ -48,37 +48,39 @@
         <div id="header-carousel" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="<?= LINK; ?>images/cv-raman/banners/1.jpg" alt="Image">
+                    <img class="w-100 main-img" src="<?= LINK; ?>images/chandigarh-uni/banners/1.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container position-relative">
-                            <div class="row align-items-center">
-                                <div class="col-md-5 pt-5 pb-3  pt-md-0  h_abform order-md-2  order-2">
+                            <div class="row align-items-center mb-90">
+                                <div class="col-md-5 text-start">
+                                    <span class="text-white fw-normal lh-base pt-4 pt-md-0 pb-3">FUELING FUTURES,
+                                        EMPOWERING DREAMS</span>
+
+                                    <h1 class="text-white head-text_02 "><span class="text-light-blue">INDIA’S
+                                            NO.1</span><br>PRIVATE <br> UNIVERSITY</h1>
+                                    <p class="">Chandigarh University Common Entrance Test (CUCET) opens the doors to global opportunities and exceptional careers, recognizing academic excellence and providing remarkable support through</p>
+                                    <div class="head-text_01 ">
+                                        <h6 class="mb-0 h4 text-white ">Scholarships worth</h6>
+                                        <span class="display-2  position-relative  ps-md-5"><sup class="fs-5">$</sup>170 <sub class="fs-5">CR</sub></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 pe-md-3  border-end ">
+                                    <div class="hrad-img">
+                                        <img src="<?= LINK; ?>images/chandigarh-uni/2.jpg" alt="">
+                                        <div class="box text-start ">
+                                            <h4 class="text-white">EART UPTO <br> <span class="display-2 fw-bold text-light-blue">100%</span><br><span class="fs-5">to unlock your scholarly potential and pave the way for your bright future.</span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pt-5 pb-3  pt-md-0  h_abform">
+                                    <div class="">
+                                        <h3 class="text-white">CUCET APPLICATION FORM 2024</h2>
+                                        <h6 class="text-white">APPLY FOR CUCET 2024 (PHASE-I)</h6>
+                                        <span class="bg-red_01">REGISTRATION END DATE: 20 JUNE 2024</span>
+                                    </div>
                                     <?php 
                                             include 'form_01.php'; 
                                         ?>
-                                </div>
-                                <div class="col-md-7 text-start order-md-1 order-1">
-                                    <h2 class="text-white fw-normal lh-base pt-4 pt-md-0 pb-3">Recognized as <br><span
-                                            class="fw-bold text-yellow h1"> Top 100 NIRF University for<br>7 consecutive
-                                            years</span>
-                                    </h2>
-                                    <span class="h3 border text-white rounded-pill px-4"><span
-                                            class="text-yellow">Research & </span>Innovation Culture </span>
-                                    <h1 class="display-5 text-white my-4">Admissions Open</h1>
-                                    <div class="d-flex text-center">
-                                        <div class="pe-3 border-end border-2">
-                                            <h1 class="text-yellow mb-0 fw-bold">Under Graduate</h1>
-                                            <h2 class="text_big fw-bolder lh-1 text-white px-3">4 Years<br><span
-                                                    class="fs-6 fw-normal">(Full time)</span>
-                                            </h2>
-                                        </div>
-                                        <div class="ps-3">
-                                            <h1 class="text-yellow mb-0 fw-bold">Post Graduate</h1>
-                                            <h2 class="text_big fw-bolder lh-1 text-white px-3">2 Years<br><span
-                                                    class="fs-6 fw-normal">(Full time)</span>
-                                            </h2>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -91,23 +93,20 @@
         <!---our top ranked patanered start--->
         <section class="wow fadeInUp" data-wow-delay="0.1s">
             <div class="container position-relative pt-3" id="about-us">
-                <div class="row bgimg_contain bgimg_norepeat mobile_hide ">
-                    <div class="col-md-4  d-none d-md-block"></div>
-                    <div class="col-md-7 py-4">
-                        <h4 class="text-blue fw-bold lh-base">Committed to reimagining the future <br>since the
-                            establishment in 1997</h5>
-                            <p class="lh-lg mb-2">CGU, Odisha, a multi-disciplinary university offers career-oriented
-                                courses at all levels, i.e., UG, PG and PhD across diverse streams, including
-                                Engineering, Humanities, Agriculture, Pharmacy, Basic Sciences and Management. As
-                                India’s leading university, we look after the diverse modalities of International
-                                Education Pertaining to Admission Schemes, Scholarships, Student Exchanges, Dual
-                                Degrees, Short-term & long-term Study Abroad Programs and Global Collaborations. We make
-                                learning more relevant and transformational with a united mission - to solve real-world
-                                problems for a better tomorrow.</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex">
+                            <div class="">
+                                <h3 class=" fw-bold"><span class="h3 text-light-blue">BESTOWED WITH A+ ACCREDITATION</span>
+                                BY NATIONAL ASSESSMENT AND ACCREDITATION COUNCIL (NAAC)</h3>
+                            </div>
+                            <div class="">
+                                <img src="" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-4 d-flex align-items-end d-md-none d-block">
-                        <img src="images/cv-raman/1.jpg" class="img-fluid" alt="">
-                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-5"></div>
                 </div>
             </div>
         </section>
@@ -129,7 +128,8 @@
                         <div class="d-flex align-items-center">
                             <div class="border i_count rounded-circle position-relative overflow-hidden">
                                 <div class="border p-3 rounded-circle bg-white">
-                                    <img src="<?= LINK; ?>images/cv-raman/icon/<?= $a[$i]; ?>.png" height="50" alt="">
+                                    <img src="<?= LINK; ?>images/chandigarh-uni/icon/<?= $a[$i]; ?>.png" height="50"
+                                        alt="">
                                 </div>
                             </div>
                             <div class=" ps-3">
@@ -206,12 +206,12 @@
                     </div>
 
                     <div class="col-md-6  order-1 order-md-2 specializations bgimg_cover bgimg_center position-relative h_bg_over_01 z-index-1 "
-                        data-bgimg="<?= LINK; ?>images/cv-raman/programme/1.jpg">
+                        data-bgimg="<?= LINK; ?>images/chandigarh-uni/programme/1.jpg">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6  specializations bgimg_cover bgimg_center position-relative h_bg_over_01 z-index-1 "
-                        data-bgimg="<?= LINK; ?>images/cv-raman/programme/2.jpg">
+                        data-bgimg="<?= LINK; ?>images/chandigarh-uni/programme/2.jpg">
                     </div>
 
                     <div class="col-md-6  ps-md-4 p-3 py-5 px-md-5">
@@ -277,13 +277,14 @@
             <div class="container mt-3 mt-md-0">
                 <div class="row  py-5">
                     <div class="col-md-9">
-                        <h3 class="fw-bold text-yellow text-start display-6  ps-4"></b>Qualify for admission through any
+                        <h3 class="fw-bold text-light-blue text-start display-6  ps-4"></b>Qualify for admission through
+                            any
                             of these-</h3>
                         <p class="ps-4 fs-5 text-white">C.V Raman Global University All India Entrance Test (CGET-2024),
                             JEE Main, OJEE, CAT, MAT, XAT, PGAT, GATE and ATMA.</p>
                     </div>
                     <div class="col-md-3 h_btn d-md-flex align-items-center">
-                        <a class="btn bg-yellow text-dark ms-4 py-3 px-4 fs-4 fw-bold" type="button"
+                        <a class="btn bg-light-blue text-dark ms-4 py-3 px-4 fs-4 fw-bold" type="button"
                             data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now&nbsp;
                             <i aria-hidden="true" class="fas fa-arrow-right"></i>
                         </a>
@@ -307,8 +308,8 @@
                                 for ($i=0; $i < 32; $i++) { 
                             ?>
                                 <div class="col-md-12 wow slideInUp ">
-                                    <img src="<?= LINK; ?>images/cv-raman/placement/<?= $i+1; ?>.png" class="w-100"
-                                        alt="">
+                                    <img src="<?= LINK; ?>images/chandigarh-uni/placement/<?= $i+1; ?>.png"
+                                        class="w-100" alt="">
                                 </div>
                                 <?php } ?>
                             </div>
@@ -323,7 +324,8 @@
             <div class="container mt-3 py-4 mt-md-0 pt-md-0">
                 <div class="row h_partner py-5 mx-md-0">
                     <div class="col-md-9">
-                        <h4 class="fw-bold text-yellow text-start fs-3 wow slideInUp ps-4 mb-3">A Collaborative Learning
+                        <h4 class="fw-bold text-light-blue text-start fs-3 wow slideInUp ps-4 mb-3">A Collaborative
+                            Learning
                             Hub </h4>
                         <ul class="h_list_num list-unstyled fs-5 text-white lh-lg ps-4 mb-0">
                             <li class="1"><i class="fas fa-check-circle pe-3"></i>A culture of entrepreneurship &

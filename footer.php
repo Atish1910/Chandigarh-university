@@ -4,11 +4,11 @@
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-4 col-md-6 wow slideInUp py-5 footer_01">
                 <div class="p-3 p-md-0">
-                    <h4 class="text-yellow mb-3 fw-bold">Our Institute</h5>
+                    <h4 class="text-light-blue mb-3 fw-bold">Our Institute</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Bidyanagar, Mahura, Janla, Bhubaneswar, <br> Odisha 752054, India</p>
                 </div>
                 <div class="mt-5 footer_02">
-                    <h4 class="text-yellow mb-3   fw-bold">Quick Links</h5>
+                    <h4 class="text-light-blue mb-3   fw-bold">Quick Links</h5>
                     <ul class="list-unstyled row lh-lg">
                         <li class=""><a href="#1" class="nav-link">About Us</a></li>
                         <li class=""><a href="#2" class="nav-link">Key Highlights</a></li>
@@ -45,7 +45,7 @@
     <a href="#" class="btn btn-lg bg-dark text-white btn-lg-square rounded-circle back-to-top"><i
             class="bi bi-arrow-up"></i></a>
 
-    <button type="button" class="btn c_btn rounded-pill px-4 right_button bg-yellow" data-bs-toggle="modal"
+    <button type="button" class="btn c_btn rounded-pill px-4 right_button bg-light-blue" data-bs-toggle="modal"
         data-bs-target="#exampleModal">Apply Now</button>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
