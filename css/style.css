@@ -142,7 +142,7 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     background-color: #1d72bc;
 }
 .h_our.owl-carousel .owl-item img{
-    width: 145px !important;
+    width: 145px ;
 }
 .h_our .owl-carousel .owl-nav {
     position: absolute;
@@ -1232,7 +1232,7 @@ iframe .widget_container{
 /* //// CSS For Chandigarth University */
 .navbar-brand{
     background: var(--bs-white);
-    padding: 25px 15px;
+    padding: 15px 10px;
     border-radius: 0 0 30px 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
 }
@@ -1295,4 +1295,109 @@ iframe .widget_container{
 .mb-90{
     margin-top: 3rem;
     margin-bottom: 10rem;
+}
+.box_02{
+    background: #f1f9fa;
+    border-radius: 10px;
+    padding: 23px;
+}
+
+.box_03{
+    background: rgba(5, 52, 118, .9);
+    border-radius: 10px;
+    padding: 23px;
+}
+.bg-box{
+    background: #f1f9fa;
+}
+.img-02{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.m-top{
+    margin-top: -6rem;
+    z-index: 1;
+}
+.bg_height{
+    height: 450px;
+    background-position: center;
+    border-radius: 20px;
+    background-blend-mode: multiply;
+    background-color: #0000007d;
+}
+.bg_height_01{
+    /* height: 450px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-blend-mode: multiply;
+    background-color: rgba(11, 54, 113, .9);
+}
+.box-002{
+    background-color: rgba(13, 52, 103, 0.7) !important;
+}
+.box-001{
+    background-color: #0990f8b5;
+    position: absolute;
+    padding: 16px;
+    border-radius: 15px;
+    bottom: 36px;
+    width: 90%;
+    right: 2px;
+    color: white;
+}
+.filter{
+    filter: invert();
+}
+.box-003{
+    position: absolute;
+    bottom: 65px;
+}
+.bg-contain{
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90px;
+}
+.test-img{
+    height: 250px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+.head_text_02 sup{
+
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    top: 25px;
+    left: 5px;
+    position: absolute;
+
+}
+
+.head_text_02 sub{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    bottom: 18px;
+    left: 24px;
+}
+
+.bg_height_02{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-blend-mode: multiply;
+    /* background-color: rgba(11, 54, 113, .9); */
+}
+.course_01 a{
+    color: white;
+}
+
+.course_01 a:hover{
+    color: var(--grey);
 }

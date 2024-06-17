@@ -91,24 +91,24 @@
         margin: 25,
         loop: true,
         center: false,
-        dots: false,
-        nav: true,
+        dots: true,
+        nav: false,
         navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
         ],
         responsive: {
             0: {
-                items: 2
+                items: 1
             },
             576: {
-                items: 2
+                items: 1
             },
             768: {
-                items: 3
+                items: 2
             },
             992: {
-                items: 4
+                items: 2.1
             }
         }
     });

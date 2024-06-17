@@ -58,25 +58,31 @@
 
                                     <h1 class="text-white head-text_02 "><span class="text-light-blue">INDIA’S
                                             NO.1</span><br>PRIVATE <br> UNIVERSITY</h1>
-                                    <p class="">Chandigarh University Common Entrance Test (CUCET) opens the doors to global opportunities and exceptional careers, recognizing academic excellence and providing remarkable support through</p>
+                                    <p class="">Chandigarh University Common Entrance Test (CUCET) opens the doors to
+                                        global opportunities and exceptional careers, recognizing academic excellence
+                                        and providing remarkable support through</p>
                                     <div class="head-text_01 ">
                                         <h6 class="mb-0 h4 text-white ">Scholarships worth</h6>
-                                        <span class="display-2  position-relative  ps-md-5"><sup class="fs-5">$</sup>170 <sub class="fs-5">CR</sub></span>
+                                        <span class="display-2  position-relative  ps-md-5"><sup class="fs-5">$</sup>170
+                                            <sub class="fs-5">CR</sub></span>
                                     </div>
                                 </div>
                                 <div class="col-md-3 pe-md-3  border-end ">
                                     <div class="hrad-img">
                                         <img src="<?= LINK; ?>images/chandigarh-uni/2.jpg" alt="">
                                         <div class="box text-start ">
-                                            <h4 class="text-white">EART UPTO <br> <span class="display-2 fw-bold text-light-blue">100%</span><br><span class="fs-5">to unlock your scholarly potential and pave the way for your bright future.</span></h4>
+                                            <h4 class="text-white">EART UPTO <br> <span
+                                                    class="display-2 fw-bold text-light-blue">100%</span><br><span
+                                                    class="fs-5">to unlock your scholarly potential and pave the way for
+                                                    your bright future.</span></h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4 pt-5 pb-3  pt-md-0  h_abform">
                                     <div class="">
                                         <h3 class="text-white">CUCET APPLICATION FORM 2024</h2>
-                                        <h6 class="text-white">APPLY FOR CUCET 2024 (PHASE-I)</h6>
-                                        <span class="bg-red_01">REGISTRATION END DATE: 20 JUNE 2024</span>
+                                            <h6 class="text-white">APPLY FOR CUCET 2024 (PHASE-I)</h6>
+                                            <span class="bg-red_01">REGISTRATION END DATE: 20 JUNE 2024</span>
                                     </div>
                                     <?php 
                                             include 'form_01.php'; 
@@ -91,277 +97,301 @@
         <!-- Carousel End -->
 
         <!---our top ranked patanered start--->
-        <section class="wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container position-relative pt-3" id="about-us">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="d-flex">
-                            <div class="">
-                                <h3 class=" fw-bold"><span class="h3 text-light-blue">BESTOWED WITH A+ ACCREDITATION</span>
-                                BY NATIONAL ASSESSMENT AND ACCREDITATION COUNCIL (NAAC)</h3>
+        <section class="pb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container pb-5" id="about-us">
+                <div class="row  position-relative m-top">
+                    <div class="col-md-4 box_02 ">
+                        <div class="row  ">
+                            <div class="col-md-8">
+                                <h6 class=" fw-bold"><span class="h6 text-light-blue">BESTOWED WITH A+
+                                        ACCREDITATION</span>
+                                    BY NATIONAL ASSESSMENT AND ACCREDITATION COUNCIL (NAAC)</h3>
                             </div>
-                            <div class="">
-                                <img src="" alt="">
+                            <div class="col-md-4">
+                                <img src="images/chandigarh-uni/3.jpg" class="w-100" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-5"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pt-5 pb-3 bg-red wow fadeInUp" data-wow-delay="0.1s" id="key-highlights">
-            <div class="container">
-                <div class="text-center text-md-start">
-                    <h5 class="text-white fw-bold mb-4 text-center h_headn h_headn_b">Key Highlights</h5>
-                </div>
-                <div class="row justify-content-center pt-3">
-                    <?php
-                    $a = array('1','2','3','4','5','6');
-                    $b = array("Research Publications","Books in diverse areas","Govt. Funded Research Projects","Students ","Acres Green Campus","International Student");
-                    $c = array('2236','500','50','8000','100','300');
-
-                    for ($i=0; $i < count($a); $i++) {
-                ?>
-                    <div class="col-md-4 pb-3 mb-4">
-                        <div class="d-flex align-items-center">
-                            <div class="border i_count rounded-circle position-relative overflow-hidden">
-                                <div class="border p-3 rounded-circle bg-white">
-                                    <img src="<?= LINK; ?>images/chandigarh-uni/icon/<?= $a[$i]; ?>.png" height="50"
-                                        alt="">
+                    <div class="col-md-3 d-flex ">
+                        <img src="images/chandigarh-uni/4.jpg" class="img-02" alt="">
+                    </div>
+                    <div class="col-md-5 box_02">
+                        <div class="row placements_01 h_our owl-carousel owl-carousel-vertical h-100">
+                            <?php
+                                for ($i=0; $i < 32; $i++) {
+                            ?>
+                            <div class="col-md-12 wow slideInUp ">
+                                <div class="row bg-box ">
+                                    <div class="col-md-8">
+                                        <small class=" fw-bold">CU Rank <br>
+                                            <p class="text-light-blue mb-0 fs-4">4th</p>Amongst Top Universities In Pune
+                                        </small>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="<?= LINK; ?>images/chandigarh-uni/placement/<?= $i+1; ?>.png"
+                                            class="w-100" alt="">
+                                    </div>
                                 </div>
                             </div>
-                            <div class=" ps-3">
-                                <p class="fs-1 text-white mb-0"><b class="text-white fs-1 counter-value"><?= $c[$i]; ?>
-                                    </b>+</p>
-                                <h5 class="text-white"><?= $b[$i]; ?></h5>
-                            </div>
+                            <?php } ?>
                         </div>
                     </div>
-                    <?php 
-                }
-                 ?>
                 </div>
             </div>
         </section>
 
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <section class="py-5 icons_01 wow fadeInUp" data-wow-delay="0.1s" id="Programme-2024-25">
+        <!-- ------------------------------------------------------------------------------------------------------------ -->
+        <section>
             <div class="container">
-                <div class="text-center text-md-start">
-                    <h5 class="text-blue fw-bold mb-4 text-center h_headn h_headn_b">PROGRAMME 2024-25</h5>
-                </div>
                 <div class="row">
-                    <div class="col-md-6  py-5 px-md-5 order-2 order-md-1">
-                        <h3 class="text-dblue fw-bold mb-4 ">Under Graduate Courses </h3>
-                        <div class="row">
-                            <h4 class="text-blue fw-bold">B.Tech</h4>
-                            <div class="col-md-12">
-                                <ul class="h_list_num list-unstyled lh-lg mb-0">
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Computer Science & Engineering
-                                    </li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Chemical Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Civil & Environmental
-                                        Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Marine Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Electrical Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Mechanical Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Electronics and Communication
-                                        Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Electrical and Electronic
-                                        Engineering</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <h4 class="text-blue fw-bold pt-3">B.Sc</h4>
-                            <div class="col-md-12">
-                                <ul class="h_list_num list-unstyled lh-lg mb-0">
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Agriculture</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Hotel Management </li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Hotel & Hospitality
-                                        Administration</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Culinary & Pastry Arts, </li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Airlines, Tourism &
-                                        Hospitality</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <h4 class="text-blue fw-bold pt-2">BBA </h4>
-                            </div>
-                            <div class="col-md-12">
-                                <h4 class="text-blue fw-bold pt-2">BCA </h4>
-                            </div>
-                            <div class="col-md-12">
-                                <h4 class="text-blue fw-bold pt-2">B.Pharma </h4>
-                            </div>
-                            <div class="col-md-12">
-                                <h4 class="text-blue fw-bold pt-2">D.Pharma </h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6  order-1 order-md-2 specializations bgimg_cover bgimg_center position-relative h_bg_over_01 z-index-1 "
-                        data-bgimg="<?= LINK; ?>images/chandigarh-uni/programme/1.jpg">
+                    <div class="col-md-12 text-center ">
+                        <h4 class="fw-bold">INDIA'S PREMIER SCHOLARSHIP</h4>
                     </div>
                 </div>
+                <div class="row ">
+                    <?php
+                        $a = array("1","2","3","4");
+                        $b = array("","mt-5","","mt-5");
+                        $c = array("","box-002","","box-002");
+                        $d = array("Available By","Student Diversity from","Ensuring","Hallmark of Academic");
+                        $e = array("1.30 Lakh+ <br>Students","All 28 Indian States and 8 Union Territories","Inclusivity and Equality","Accomplishment and Potential");
+                        for ($i=0; $i < count($a); $i++) {
+                            ?>
+                    <div class="col-md-3 position-relative bg_height <?= $b[$i];?>"
+                        data-bgimg="<?= LINK; ?>images/chandigarh-uni/scholership/<?= $a[$i];?>.jpg">
+                        <div class="box-001 <?= $c[$i];?>">
+                            <div class="">
+                                <img src="images/chandigarh-uni/scholership/icons/<?= $a[$i];?>.png" width="34"
+                                    class="filter" alt="">
+                            </div>
+                            <small class="mb-0"><?= $d[$i];?></small>
+                            <h4 class="text-white"><?= $e[$i];?></h4>
+                        </div>
+                    </div>
+
+                    <?php
+                    } 
+                ?>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------ -->
+        <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------ -->
+        <section class="py-5">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-6  specializations bgimg_cover bgimg_center position-relative h_bg_over_01 z-index-1 "
-                        data-bgimg="<?= LINK; ?>images/chandigarh-uni/programme/2.jpg">
+                    <div class="col-md-12 text-center ">
+                        <h4 class="fw-bold mb-0">CHANDIGARH UNIVERSITY</h4>
+                        <h2>COMMON ENTRANCE TEST (CUCET)</h2>
+                        <small>Chandigarh University Common Entrance Test (CUCET 2024) is a national-level entrance exam
+                            and scholarship test mandatory for admission. CUCET exam forms the basis of eligibility that
+                            is mandatory for admission in Engineering, MBA, Pharmacy, LLM, and Integrated Law programs.
+                            The amount of the scholarship depends on the fee of the program, the date of admission, and
+                            the performance of the student in CUCET 2024.</small>
                     </div>
-
-                    <div class="col-md-6  ps-md-4 p-3 py-5 px-md-5">
-                        <h3 class="text-dblue fw-bold mb-4 ">Post Graduate Courses </h3>
-                        <div class="row">
-                            <h4 class="text-blue fw-bold pt-3">M.Tech </h4>
-                            <div class="col-md-12">
-                                <ul class="h_list_num list-unstyled lh-lg mb-0">
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Chemical Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Electrical Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>M.Tech (Research) in Civil
-                                        Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Mechatronics
-                                        Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Computer Science
-                                        Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Heat Power
-                                        Engineering</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>Electronics And
-                                        Communication(Signal Processing And Communication)</li>
-                                    <li class="1"><i class="fas fa-check-circle pe-3"></i>
-                                        Mechanical Engineering</li>
-                                </ul>
+                </div>
+                <div class="row py-5">
+                    <div class="col-md-4 position-relative bg_height_01"
+                        data-bgimg="<?= LINK; ?>images/chandigarh-uni/test/1.jpg">
+                        <div class="box-003">
+                            <h2 class="text-white"><span class="text-light-blue">SEIZE <br> YOUR GOLDEN <br> CHANCE
+                                    <br></span>TO EARN <br>SCHOLARSHIPS <br> WORTH </h2>
+                            <div class="bg-contain position-relative head_text_02"
+                                data-bgimg="<?= LINK; ?>images/chandigarh-uni/test/2.jpg">
+                                <p class="text-white ps-md-3 mb-0"><sup>$</sup> <span
+                                        class="display-2">170</span><br><sub> CRORES</sub></p>
                             </div>
                         </div>
-                        <div class="row">
+                        <img src="<?= LINK; ?>images/chandigarh-uni/test/3.webp" class="test-img" alt="">
+                    </div>
+                    <div class="col-md-4 box_02">
+                        <div class="">
+                            <h5 class="mb-0">CUCET Phase-I</h5>
+                            <p>October 2023 - June 2024</p>
+                        </div>
 
-                            <div class="col-md-12">
-                                <h4 class="text-blue fw-bold pt-2">MBA</h4>
+
+                        <div>
+                            <?php
+                            $a = array("90.01 to 100 Marks:", "80 to 90 Marks:", "70 to 79.99 Marks:", "60 to 69.99 Marks:", "50 to 59.99 Marks:", "40 to 49.99 Marks:", "30 to 39.99 Marks:");
+                            $b = array( "100% Scholarship", "50% Scholarship", "40% Scholarship", "30% Scholarship", "25% Scholarship", "15% Scholarship", "Eligible");
+                            for ($i=0; $i < count($a); $i++) {
+                            ?>
+                            <p class="fs-5 "><?= $a[$i];?><br><span class="fs-6  fw-bold"><?= $b[$i];?></span></p>
+
+                            <?php
+                            } 
+                        ?>
+                            <div class="d-grid">
+                                <button class="btn btn-primary">Apply Now</button>
                             </div>
-                            <div class="col-md-12">
-                                <h4 class="text-blue fw-bold pt-2">MCA</h4>
-                            </div>
-                            <div class="col-md-12">
-                                <h4 class="text-blue fw-bold pt-2">MSC</h4>
-                            </div>
-                            <div class="col-md-12">
-                                <h4 class="text-blue fw-bold pt-2">M.Sc in Hotel Administration </h4>
-                            </div>
-                            <div class="col-md-12">
-                                <h4 class="text-blue fw-bold pt-2">MTTM- Master in travel and tourism Management
-                                </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-4 box_03">
+                        <div class=" text-white">
+                            <h5 class="mb-0 text-white">CUCET Phase-I</h5>
+                            <p>October 2023 - June 2024</p>
+                        </div>
+
+
+                        <div>
+                            <?php
+                            $a = array("90.01 to 100 Marks:", "80 to 90 Marks:", "70 to 79.99 Marks:", "60 to 69.99 Marks:", "50 to 59.99 Marks:", "40 to 49.99 Marks:", "30 to 39.99 Marks:");
+                            $b = array( "100% Scholarship", "50% Scholarship", "40% Scholarship", "30% Scholarship", "25% Scholarship", "15% Scholarship", "Eligible");
+                            for ($i=0; $i < count($a); $i++) {
+                            ?>
+                            <p class="fs-5 text-white"><?= $a[$i];?><br><span class="fs-6  fw-bold"><?= $b[$i];?></span>
+                            </p>
+
+                            <?php
+                            } 
+                            ?>
+                            <div class="d-grid">
+                                <button class="btn btn-primary " disabled>Comming Soon</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
 
 
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <section class="py-md-5 pb-5 wow fadeInUp" data-wow-delay="0.1s" id="admission-details">
+        <!-- ------------------------------------------------------------------------------------------------------------ -->
+        <section class="py-5">
             <div class="container">
-                <div class="text-center text-md-start">
-                    <h5 class="text-blue fw-bold mb-4 text-center h_headn h_headn_b">ADMISSION DETAILS</h5>
-                </div>
-                <?php include 'admission-details.php';?>
-            </div>
-        </section>
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-        <section class="h_partner  rounded-0 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container mt-3 mt-md-0">
-                <div class="row  py-5">
-                    <div class="col-md-9">
-                        <h3 class="fw-bold text-light-blue text-start display-6  ps-4"></b>Qualify for admission through
-                            any
-                            of these-</h3>
-                        <p class="ps-4 fs-5 text-white">C.V Raman Global University All India Entrance Test (CGET-2024),
-                            JEE Main, OJEE, CAT, MAT, XAT, PGAT, GATE and ATMA.</p>
-                    </div>
-                    <div class="col-md-3 h_btn d-md-flex align-items-center">
-                        <a class="btn bg-light-blue text-dark ms-4 py-3 px-4 fs-4 fw-bold" type="button"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now&nbsp;
-                            <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ----------------------------------------------------------------------------------------------------------- -->
-
-        <section class=" wow fadeInUp" data-wow-delay="0.1s" id="5">
-            <div class="container">
-                <div class="row mt-5 mb-5 pb-5">
-                    <div class="col-md-12">
-                        <div class="text-center text-md-start">
-                            <h5 class="text-blue fw-bold mb-4 text-center h_headn h_headn_b">PLACEMENTS</h5>
+                <div class="row py-5 position-relative bg_height_02"
+                    data-bgimg="<?= LINK; ?>images/chandigarh-uni/course/bg_01.jpg">
+                    <div class="col-md-5">
+                        <div class=" text-white">
+                            <h3 class="mb-0 text-white fw-bold">FIND YOUR COURSE <br><br></h3>
+                            <p>Pursue the Futuristic course of your choice. Select your Discipline and Program from the
+                                list below:</p>
                         </div>
                         <div class="">
-                            <div class="row placements_01 h_our owl-carousel owl-carousel-vertical h-100">
-                                <?php
-                                for ($i=0; $i < 32; $i++) { 
-                            ?>
-                                <div class="col-md-12 wow slideInUp ">
-                                    <img src="<?= LINK; ?>images/chandigarh-uni/placement/<?= $i+1; ?>.png"
-                                        class="w-100" alt="">
-                                </div>
-                                <?php } ?>
+                            <div class="form_01 my-md-3 w-100 ">
+                                <form class="enqui_form_ai" action="" method="post">
+                                    <div class="">
+                                        <!-- <h3 class="t-lgreen pb-3 text-blue" id="exampleModalLabel">Enquire Now</h3> -->
+                                        <div class="row">
+                                            <div class="col-md-12 mb-3">
+                                                <div class="form-group">
+                                                    <select class="form-control form_servi" placeholder="graduation"
+                                                        name="n_graduation">
+                                                        <option selected disabled>Select Discipline</option>
+                                                        <option value="engineering">Engineering</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mb-3">
+                                                <div class="form-group">
+                                                    <select class="form-select form_deptart" name="n_dept">
+                                                        <option selected value="">Select Programme</option>
+                                                        <optgroup label="engineering" class="d-none">
+                                                            <option data-course="engineering"
+                                                                value="(Aerospace Engineering)">Bachelor of
+                                                                Engineering (Aerospace Engineering)</option>
+                                                            <option data-course="engineering" value="Biotechnology">
+                                                                Bachelor of Engineering
+                                                                (Biotechnology) </option>
+                                                            <option data-course="engineering"
+                                                                value="(Biotechnology)- Lateral Entry">Bachelor of
+                                                                Engineering (Biotechnology)- Lateral Entry</option>
+                                                            <option data-course="engineering"
+                                                                value="(Computer Science & Engineering) - Lateral Entry">
+                                                                Bachelor of Engineering
+                                                                (Computer Science & Engineering) - Lateral Entry
+                                                            </option>
+                                                            <option data-course="engineering"
+                                                                value="(Computer Science and Engineering) (Computer Science and Business Systems)">
+                                                                Bachelor of Engineering (Computer Science and
+                                                                Engineering) (Computer Science and
+                                                                Business Systems) (In association with TCS)</option>
+                                                        </optgroup>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 text-center nav_01 d-grid">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">View Program</button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                    Modal title</h1>
+                                                                <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                ...
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Save
+                                                                    changes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 text-white border-end">
+                        <p>Following AIT MBA Specialized Programs are having different Scholarship slabs. <br><br>Please
+                            visit the program webpage by clicking the links below for more information.</p>
+                        <ul class="h_list_num list-unstyled course_01 lh-lg mb-3">
+                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA Banking & Financial Engineering
+                                    with SBI & Tally</a></li>
+                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA Strategic HR with AON
+                                    Consulting</a></li>
+                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA Fintech with NSE Academy</a>
+                            </li>
+                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA - Strategic Human Resources
+                                    (ITP)</a></li>
+                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA (Applied Finance)</a></li>
+                        </ul>
+                        <p class="h4 fw-bold text-white">NOTE: <br><span class="h6 text-white fw-normal">The average
+                                outflow of scholarship will be 10%. </span></p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class=" text-white">
+                            <h3 class="mb-0 text-white fw-bold">AIT MBA Specialized <br> Programs Slabs:</h3>
+                        </div>
+
+
+                        <div>
+                            <?php
+                            $a = array("90.01 to 100 Marks:", "80 to 89.89 Marks:", "70 to 79.99 Marks:", "60 to 69.99 Marks:", "50 to 59.99 Marks:", "40 to 49.99 Marks:");
+                            $b = array( "40% Scholarship", "40% Scholarship", "30% Scholarship", "20% Scholarship", "15% Scholarship", "10% Scholarship");
+                            for ($i=0; $i < count($a); $i++) {
+                            ?>
+                            <p class="fs-5 text-white"><?= $a[$i];?><br><span class="fs-6  fw-bold"><?= $b[$i];?></span>
+                            </p>
+
+                            <?php
+                            } 
+                            ?>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </section>
-
-        <!---patanered start--->
-        <section class=" wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container mt-3 py-4 mt-md-0 pt-md-0">
-                <div class="row h_partner py-5 mx-md-0">
-                    <div class="col-md-9">
-                        <h4 class="fw-bold text-light-blue text-start fs-3 wow slideInUp ps-4 mb-3">A Collaborative
-                            Learning
-                            Hub </h4>
-                        <ul class="h_list_num list-unstyled fs-5 text-white lh-lg ps-4 mb-0">
-                            <li class="1"><i class="fas fa-check-circle pe-3"></i>A culture of entrepreneurship &
-                                incubation </li>
-                            <li class="1"><i class="fas fa-check-circle pe-3"></i>State-of-the-art infrastructure </li>
-                            <li class="1"><i class="fas fa-check-circle pe-3"></i>Choice Based Credit System (CBCS)
-                            </li>
-                            <li class="1"><i class="fas fa-check-circle pe-3"></i>Regular laboratory classes and
-                                projects are embedded into the curriculum owing to the ‘learning by doing’ approach</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3  d-md-flex align-items-center">
-                        <a class="btn c_btn text-dark ms-4" type="button" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Apply Now&nbsp;
-                            <i aria-hidden="true" class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---patanered end--->
-
-        <section class=" wow fadeInUp" data-wow-delay="0.1s">
-
     </div>
     </section>
-
-    <!---contact part start--->
-    <div class="">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d958452.0174213767!2d85.735793!3d20.219266!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a8fa59ac3c81%3A0xc81fc475faa77274!2sC.%20V.%20Raman%20Global%20University!5e0!3m2!1sen!2sus!4v1715670254021!5m2!1sen!2sus"
-            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    <?php include 'footer.php'; ?>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
