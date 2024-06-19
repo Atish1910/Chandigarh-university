@@ -6,10 +6,11 @@
 :root {
     --blue: #1a4a79;
     --secondary: #555555;
-    --light: #F1F3FA;
+    --light: #f1f9fa;
     --dark: #1c1b17;
     --black: #000;
     --light-blue: #0990f8;
+    --yellow: #f7a300;
     --red: #1a4a79;
     --grey: #a1a1a1;
     --hfont: 'Mukta', sans-serif;
@@ -22,36 +23,55 @@ body {
     color: var(--bs-dark);
 }
 
-h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: var(--hfont);
 }
 
 .text-blue {
     color: var(--blue) !important;
 }
+
 .text-light-blue {
     color: var(--light-blue) !important;
 }
 
-.text-red {
-    color: var(--red) !important;
+.text-yellow {
+    color: var(--yellow) !important;
 }
+
 .bg-light-blue {
     background: var(--light-blue) !important;
 }
 
-.bg-red {
-    background: var(--red) !important;
+.bg-yellow {
+    background: var(--yellow) !important;
 }
+
 .bg-dark {
     background: var(--dark) !important;
 }
+
 .bg-black {
     background: var(--black) !important;
 }
 
 .bg-grey {
     background: var(--grey) !important;
+}
+
+.bg-light {
+    background: var(--light) !important;
 }
 
 .bg-blue {
@@ -97,10 +117,12 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
 .delay-4 {
     animation-delay: 1.2s !important;
 }
+
 .delay-5 {
     animation-delay: 1.6s !important;
 }
-.animate_infinite{
+
+.animate_infinite {
     animation-iteration-count: infinite !important;
 }
 
@@ -138,12 +160,15 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
 .h_colr {
     background-color: var(--blue);
 }
-.bg_blue_light{
+
+.bg_blue_light {
     background-color: #1d72bc;
 }
-.h_our.owl-carousel .owl-item img{
-    width: 145px ;
+
+.h_our.owl-carousel .owl-item img {
+    width: 145px;
 }
+
 .h_our .owl-carousel .owl-nav {
     position: absolute;
     top: 50%;
@@ -170,6 +195,7 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     border-radius: 20px;
     font-size: 51px;
 }
+
 .h_partner.h_part_apply {
     background-image: url(../images/bg1.JPG);
     background-position: top;
@@ -313,11 +339,13 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     font-weight: 500;
     outline: none;
 }
+
 .center_tagline th {
     color: white;
     background-color: var(--light-blue) !important;
     text-transform: capitalize !important;
 }
+
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link.active {
@@ -400,6 +428,7 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
 #header-carousel .carousel-item {
     position: relative;
 }
+
 #header-carousel .carousel-item:before {
     position: absolute;
     content: '';
@@ -858,21 +887,25 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
 .navbar-brand img {
     height: 60px;
 }
-.fetchButton{
+
+.fetchButton {
     background-color: var(--light-blue);
 }
-.fetchButton.active{
+
+.fetchButton.active {
     background-color: #d55234;
 }
+
 /* .h_our .owl-stage-outer{
     height: 100%;
 } */
-.h_our .owl-stage{
+.h_our .owl-stage {
     display: flex;
     align-items: center;
     background: var(--bs-white);
     height: 100%;
 }
+
 .h_our .owl-nav {
     display: none;
     position: absolute;
@@ -882,7 +915,9 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     justify-content: center;
     padding-top: 15px;
 }
-.h_our .owl-nav .owl-prev, .h_our .owl-nav .owl-next{
+
+.h_our .owl-nav .owl-prev,
+.h_our .owl-nav .owl-next {
     margin-left: 15px;
     width: 45px;
     height: 45px;
@@ -895,6 +930,7 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     font-size: 25px;
     transition: .5s;
 }
+
 .alignment_01 .form-control {
     border-radius: 1.25rem !important;
     appearance: auto;
@@ -910,77 +946,95 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     left: 0;
     margin: auto;
 }
+
 .banner_form_01 .form-control {
     border-radius: 20px;
 }
-.form_02 {
-}
+
+.form_02 {}
+
 .c_btn {
     background-color: var(--light-blue);
     color: #f6f9ff;
     /* border-radius: 30px; */
     font-size: 18px;
 }
+
 .c_btn:hover {
     color: var(--light-blue) !important;
     background-color: #f6f9ff !important;
     border: solid 1px;
     font-weight: bold;
 }
-.h_headn{
+
+.h_headn {
     color: var(--light-blue);
     letter-spacing: 1px;
     line-height: 1;
     font-size: 2.9em;
 }
-.footer_01 p a{
+
+.footer_01 p a {
     color: var(--bs-white);
 }
-.footer_01 p a:hover{
+
+.footer_01 p a:hover {
     color: var(--light-blue);
 }
 
 
-.footer_02  a{
-    color: var(--bs-white);
+.footer_02 a {
+    color: var(--yellow);
 }
 
-.footer_02 a:hover{
+.footer_02 a:hover {
     color: var(--light-blue);
 }
-.h_headn.h_headn_b{
+
+.h_headn.h_headn_b {
     color: var(--black);
 }
-.bgimg_norepeat{
+
+.bgimg_norepeat {
     background-repeat: no-repeat !important;
 }
-.bgimg_cover{
+
+.bgimg_cover {
     background-size: cover !important;
 }
-.bgimg_contain{
+
+.bgimg_contain {
     background-size: contain !important;
 }
-.bgimg_center{
+
+.bgimg_center {
     background-position: center !important;
 }
-.bgimg_end{
+
+.bgimg_end {
     background-position: right bottom !important;
 }
-.h_bubble, .h_prod_bubble{
+
+.h_bubble,
+.h_prod_bubble {
     display: inline-block;
 }
-.h_bubble_wrap, .h_prod_bu_sub{
+
+.h_bubble_wrap,
+.h_prod_bu_sub {
     height: 0;
     padding-bottom: 100%;
 }
-.h_bubble_cirle{
+
+.h_bubble_cirle {
     height: 50px;
     width: 50px;
     background: var(--black);
     color: var(--light-blue);
     z-index: 1;
 }
-.h_bubble_cirle_new{
+
+.h_bubble_cirle_new {
     height: 100%;
     width: 100%;
     background: #000000ad;
@@ -990,17 +1044,21 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     border-radius: 50%;
     font-size: 2em;
 }
-.h_bubble_tag{
+
+.h_bubble_tag {
     bottom: 12%;
     z-index: 95;
     background: var(--black);
     color: var(--light-blue);
 }
-.h_bubble_wrap:hover .h_bubble_cirle, .h_bubble_wrap:hover .h_bubble_tag{
+
+.h_bubble_wrap:hover .h_bubble_cirle,
+.h_bubble_wrap:hover .h_bubble_tag {
     background: var(--bs-white);
     color: var(--black);
     border: 1px solid var(--black);
 }
+
 .right_button {
     top: unset;
     bottom: 0;
@@ -1010,10 +1068,12 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     border-radius: 0 !important;
     z-index: 1021;
 }
-.modal.show .modal-dialog{
+
+.modal.show .modal-dialog {
     top: 8%;
 }
-.i_count{
+
+.i_count {
     height: 80px;
     width: 80px;
     display: flex;
@@ -1024,7 +1084,8 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     padding: 60px;
     z-index: 1;
 }
-.i_count:before{
+
+.i_count:before {
     position: absolute;
     content: '';
     left: 0;
@@ -1034,24 +1095,30 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     background-color: var(--light-blue);
     z-index: -1;
 }
-.h_adprocs .nav-tabs li{
+
+.h_adprocs .nav-tabs li {
     background-color: var(--grey);
 }
-.h_adprocs .nav-tabs li .nav-link.active{
+
+.h_adprocs .nav-tabs li .nav-link.active {
     background-color: var(--light-blue);
 }
+
 .h_adprocs table {
     border-collapse: unset;
     border-spacing: 10px;
 }
-.h_adprocs table tr td:nth-child(2){
+
+.h_adprocs table tr td:nth-child(2) {
     background-color: var(--light);
 }
-.h_list_num li{
+
+.h_list_num li {
     display: flex;
     align-items: baseline;
 }
-.h_list_num li:before{
+
+.h_list_num li:before {
     position: absolute;
     /* content: counter(list-number)'.'; */
     left: 0;
@@ -1059,25 +1126,32 @@ h1,h2,h3,h4,h5,h6, .h1,.h2,.h3,.h4,.h5,.h6 {
     font-size: 18px;
     font-weight: bold;
 }
-.h_bg_over{
+
+.h_bg_over {
     background: rgb(20 29 73 / 92%);
     background-blend-mode: multiply;
 }
-.h_bg_over_01{
+
+.h_bg_over_01 {
     /*background: #3f51b5c7;*/
     background-blend-mode: multiply;
 }
-.h_bg_over .h_list_num li::before{
+
+.h_bg_over .h_list_num li::before {
     top: 0px;
     font-size: 20px;
 }
-.text_big{
+
+.text_big {
     font-size: 1.25rem;
 }
-iframe .widget_container{
+
+iframe .widget_container {
     background: var(--bs-white) !important;
 }
-#n_about:before, #n_about:after{
+
+#n_about:before,
+#n_about:after {
     position: absolute;
     content: '';
     right: 4%;
@@ -1087,51 +1161,60 @@ iframe .widget_container{
     background-color: white;
     z-index: -1;
 }
-.admission .nav-link{
+
+.admission .nav-link {
     color: var(--bs-dark);
-    border: solid var(--light-blue) 1px;
-    width: 100%;
+    /* border: solid var(--light-blue) 1px; */
+    /* width: 100%; */
     border-radius: 0px;
     /* margin-bottom: 15px;
     justify-content: space-between;
     align-items: center;
     display: flex; */
 }
-.admission .nav-link.active{
+
+.admission .nav-link.active {
     color: var(--bs-dark);
     background-color: var(--light-blue);
 
 }
-.mobile_hide{
+
+.mobile_hide {
     background-image: unset;
 }
-.border_end{
+
+.border_end {
     border-right: none;
 }
-.footer_01 p{
+
+.footer_01 p {
     display: flex;
     align-items: center;
 }
-.specializations{
+
+.specializations {
     height: 300px;
 }
-@media (min-width: 768px) {
-    
-.border_end{
-    border-right: solid var(--dark) 1px;
-}
 
-.specializations{
-    height: unset;
-}
-    
-#n_about:before, #n_about:after{
-    background-color: #141d49eb;
-}
-    
-.mobile_hide{
-    background-image: url(../images/chandigarh-uni/1.jpg);
-}
+@media (min-width: 768px) {
+
+    .border_end {
+        border-right: solid var(--dark) 1px;
+    }
+
+    .specializations {
+        height: unset;
+    }
+
+    #n_about:before,
+    #n_about:after {
+        background-color: #141d49eb;
+    }
+
+    .mobile_hide {
+        background-image: url(../images/chandigarh-uni/1.jpg);
+    }
+
     .fs-7 {
         font-size: 0.8rem !important;
     }
@@ -1152,39 +1235,48 @@ iframe .widget_container{
     .h_number p {
         text-align: left;
     }
+
     .carousel-caption {
         display: flex;
         align-items: center;
     }
+
     .h_abform {
         /* position: absolute;
         right: -40px; */
     }
+
     .placements_01 img {
         height: 80px !important;
         width: 100%;
         object-fit: contain;
     }
+
     /* .mwrrap{
         width: 300px;
     } */
-    .h_bubble_cirle{
+    .h_bubble_cirle {
         height: 65px;
         width: 65px;
     }
-    .h_bubble_bef1:before{}
-    .h_bubble_main:nth-child(2) .h_bubble_bef1:before{
+
+    .h_bubble_bef1:before {}
+
+    .h_bubble_main:nth-child(2) .h_bubble_bef1:before {
         display: block;
     }
-    .testimonial-carousel .owl-nav{
+
+    .testimonial-carousel .owl-nav {
         right: unset;
         top: 58%;
         left: -45%;
         justify-content: unset;
     }
-    .text_big{
+
+    .text_big {
         font-size: 2rem;
     }
+
     .right_button {
         top: 46%;
         right: 17px;
@@ -1195,23 +1287,27 @@ iframe .widget_container{
         border-radius: 30px !important;
     }
 }
+
 .center_tagline_01 th {
     color: white;
     background-color: var(--dcolor) !important;
     text-transform: capitalize !important;
 }
-.modal-content .form_01{
+
+.modal-content .form_01 {
     padding: 0px !important;
-    margin: 0px !important; 
+    margin: 0px !important;
 }
+
 @media (max-width: 768px) {
-    
+
     .navbar-brand img {
         height: 45px;
     }
 
 }
-.icons_01 ul i{
+
+.icons_01 ul i {
     color: var(--light-blue) !important;
 }
 
@@ -1219,31 +1315,35 @@ iframe .widget_container{
 .thank_form .bg-white {
     border-radius: 15px;
 }
+
 .th_meet {
     background-color: var(--red);
     height: 140px;
     width: 140px;
 }
+
 .th_meet img {
     height: 90px;
 }
 
 
 /* //// CSS For Chandigarth University */
-.navbar-brand{
+.navbar-brand {
     background: var(--bs-white);
     padding: 15px 10px;
     border-radius: 0 0 30px 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
 }
-.head-text_02{
+
+.head-text_02 {
     font-family: 'Lufga';
     font-size: 65px;
     line-height: 55px;
     font-weight: 900;
     text-transform: uppercase;
 }
-.head-text_01 sup{
+
+.head-text_01 sup {
     font-weight: 700;
     color: var(--light-blue);
     top: 25px;
@@ -1251,94 +1351,144 @@ iframe .widget_container{
     position: absolute;
 }
 
-.head-text_01 sub{
+.head-text_01 sub {
     font-size: 32px;
     line-height: 81px;
     position: absolute;
     right: -35px;
     bottom: -14px;
 }
-.head-text_01 sup::before{
+
+.head-text_01 sup::before {
     content: "";
     position: absolute;
-    right: 15px;
-    top: -14px;
+    right: 16px;
+    top: -17px;
     background: url(../images/chandigarh-uni/left.jpg) no-repeat;
     background-size: contain;
     width: 18px;
-    height: 74px;
+    height: 36px;
 }
-.head-text_01 sub::after{
+
+.head-text_01 sub::after {
     content: "";
     position: absolute;
-    right: -22px;
-    top: -10px;
+    right: -25px;
+    top: 23px;
     background: url(../images/chandigarh-uni/right.jpg) no-repeat;
     background-size: contain;
     width: 18px;
-    height: 74px;
+    height: 36px;
 }
-.hrad-img img{
+
+
+.head-text_03 sup {
+    font-weight: 700;
+    color: var(--yellow);
+    top: 25px;
+    left: 21px;
+    position: absolute;
+}
+
+.z_index_01 {
+    z-index: 1;
+}
+
+.head-text_03 sub {
+    font-size: 32px;
+    line-height: 81px;
+    position: absolute;
+    right: -44px;
+    bottom: -14px;
+    z-index: 1;
+}
+
+
+.hrad-img img {
     height: 300px;
     width: 100%;
     object-fit: contain;
 }
-.box{
-    border: 1px solid ;
+
+.ranking {
+    height: 70px !important;
+    width: 100% !important;
+    object-fit: contain !important;
+}
+
+.box {
+    border: 1px solid;
     padding: 15px;
     border-radius: 35px;
     background-color: var(--blue);
 }
-.bg-red_01{
+
+.bg-red_01 {
     background-color: #e4363d;
 }
-.mb-90{
+
+.mb-90 {
     margin-top: 3rem;
     margin-bottom: 10rem;
 }
-.box_02{
+
+.box_02 {
     background: #f1f9fa;
     border-radius: 10px;
     padding: 23px;
 }
 
-.box_03{
+.box_03 {
     background: rgba(5, 52, 118, .9);
     border-radius: 10px;
     padding: 23px;
 }
-.bg-box{
+
+.bg-box {
     background: #f1f9fa;
 }
-.img-02{
+
+.img-02 {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
-.m-top{
+
+.m-top {
     margin-top: -6rem;
     z-index: 1;
 }
-.bg_height{
+
+.bg_height {
     height: 450px;
     background-position: center;
     border-radius: 20px;
     background-blend-mode: multiply;
     background-color: #0000007d;
 }
-.bg_height_01{
-    /* height: 450px; */
+
+.bg_height_01 {
+    height: 450px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
     background-blend-mode: multiply;
     background-color: rgba(11, 54, 113, .9);
 }
-.box-002{
+
+.bg_height_03 {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-002 {
     background-color: rgba(13, 52, 103, 0.7) !important;
 }
-.box-001{
+
+.box-001 {
     background-color: #0990f8b5;
     position: absolute;
     padding: 16px;
@@ -1348,26 +1498,31 @@ iframe .widget_container{
     right: 2px;
     color: white;
 }
-.filter{
+
+.filter {
     filter: invert();
 }
-.box-003{
+
+.box-003 {
     position: absolute;
     bottom: 65px;
 }
-.bg-contain{
+
+.bg-contain {
     background-size: contain;
     background-repeat: no-repeat;
     height: 90px;
 }
-.test-img{
+
+.test-img {
     height: 250px;
     position: absolute;
     right: 0px;
     bottom: 0px;
     z-index: 0;
 }
-.head_text_02 sup{
+
+.head_text_02 sup {
 
     font-weight: 700;
     font-size: 14px;
@@ -1378,15 +1533,15 @@ iframe .widget_container{
 
 }
 
-.head_text_02 sub{
+.head_text_02 sub {
     position: absolute;
     font-size: 16px;
     font-weight: 700;
-    bottom: 18px;
-    left: 24px;
+    bottom: 13px;
+    left: 32px;
 }
 
-.bg_height_02{
+.bg_height_02 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1394,10 +1549,276 @@ iframe .widget_container{
     background-blend-mode: multiply;
     /* background-color: rgba(11, 54, 113, .9); */
 }
-.course_01 a{
+
+.course_01 a {
     color: white;
 }
 
-.course_01 a:hover{
+.course_01 a:hover {
     color: var(--grey);
+}
+
+.table_css th {
+    background-color: #ececec;
+    /* color: black; */
+}
+
+.testimonals img {
+    height: 70px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.testi h2 {
+    position: relative;
+}
+
+.testi sup {
+    font-size: 28px;
+    font-weight: 900;
+    position: absolute;
+    top: 11px;
+}
+
+.border_img::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    background: url(../images/chandigarh-uni/testi/border_img.webp) no-repeat;
+    width: 11px;
+    height: 100%;
+}
+
+.placements .student {
+    position: absolute;
+    height: 350px;
+    bottom: 0px;
+    width: 100%;
+    object-fit: contain;
+    left: 109px;
+    z-index: 0;
+}
+
+.placements .company {
+    position: relative;
+    height: 56px;
+    border-radius: 0px 0px 10px 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    background-color: white;
+    right: -26px;
+    align-items: center;
+}
+
+.placements_01 .company_01 {
+    position: relative;
+    height: 56px;
+    border-radius: 10px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    background-color: white;
+    align-items: center;
+}
+
+.company_01 img {
+    width: 120px;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.placements_01 .student_02 {
+    height: 437px !important;
+    object-fit: contain;
+    position: relative;
+    width: unset !important;
+    left: 18%;
+}
+
+.students-carousel .owl-prev {
+    height: 40px;
+    width: 40px;
+    background-color: #1a4a79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.students-carousel .owl-next {
+    height: 40px;
+    width: 40px;
+    background-color: #1a4a79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+.city-carousel .owl-prev {
+    height: 40px;
+    width: 40px;
+    background-color: #1a4a79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.city-carousel .owl-next {
+    height: 40px;
+    width: 40px;
+    background-color: #1a4a79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+.placements {
+    position: relative;
+    margin-top: -56%;
+}
+
+.company_01 {
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.company_01 img {
+    width: 120px !important;
+    height: 100%;
+    object-fit: contain;
+}
+
+.venture_01 .head-text_03 {
+    position: absolute;
+    bottom: 40px;
+    width: 41%;
+    left: 30px;
+}
+
+.feature {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 35px;
+}
+
+.feature .logo_01 {
+    position: absolute;
+    top: 2%;
+    right: 0;
+}
+
+.feature::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(13, 52, 103, 0.9);
+}
+
+.feature .star::after {
+    content: '';
+    color: var(--bs-white);
+    left: 14px;
+    background: url(../images/chandigarh-uni/feature/star.webp) no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 13%;
+}
+.city img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+
+    .head-text_01 sup::before {
+        right: 15px;
+        top: -14px;
+        height: 74px;
+    }
+
+    .head-text_01 sub::after {
+        right: -22px;
+        top: -10px;
+        width: 18px;
+        height: 74px;
+    }
+
+    .head-text_03 sup::before {
+        right: 15px;
+        top: -14px;
+        height: 74px;
+    }
+
+    .head-text_03 sub::after {
+        right: -22px;
+        top: -10px;
+        width: 18px;
+        height: 74px;
+    }
+
+    .bg_height_01 {
+        height: unset;
+    }
+
+    .bg_height_03 {
+        /* height: unset; */
+    }
+
+    .placements {
+        margin-top: -15%;
+    }
+
+    .bg_height_03 {
+        background-size: contain;
+        background-position: left;
+    }
+
+    .feature::before {
+        top: 54%;
+    }
+
+    .feature .logo_01 {
+        top: 10%;
+        right: 5%;
+    }
+
 }

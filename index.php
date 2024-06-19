@@ -4,6 +4,9 @@
   date_default_timezone_set('Asia/Kolkata');
   setcookie("utm_medium", isset($_GET['utm_medium']) ? $_GET['utm_medium'] : 'Direct', strtotime(date('Y-m-d H:i:s'))+1200);
   
+  $a = file_get_contents('course_01.json');
+  $b = json_decode($a, true);
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +66,7 @@
                                         and providing remarkable support through</p>
                                     <div class="head-text_01 ">
                                         <h6 class="mb-0 h4 text-white ">Scholarships worth</h6>
-                                        <span class="display-2  position-relative  ps-md-5"><sup class="fs-5">$</sup>170
+                                        <span class="display-2  position-relative  ps-5"><sup class="fs-5">$</sup>170
                                             <sub class="fs-5">CR</sub></span>
                                     </div>
                                 </div>
@@ -100,19 +103,19 @@
         <section class="pb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container pb-5" id="about-us">
                 <div class="row  position-relative m-top">
-                    <div class="col-md-4 box_02 ">
+                    <div class="col-md-4 box_02 pb-4 pbd-md-0">
                         <div class="row  ">
                             <div class="col-md-8">
                                 <h6 class=" fw-bold"><span class="h6 text-light-blue">BESTOWED WITH A+
                                         ACCREDITATION</span>
                                     BY NATIONAL ASSESSMENT AND ACCREDITATION COUNCIL (NAAC)</h3>
                             </div>
-                            <div class="col-md-4">
-                                <img src="images/chandigarh-uni/3.jpg" class="w-100" alt="">
+                            <div class="col-md-4 pt-3 ">
+                                <img src="images/chandigarh-uni/3.jpg" class="ranking" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex ">
+                    <div class="col-md-3 d-flex  pb-4 pbd-md-0">
                         <img src="images/chandigarh-uni/4.jpg" class="img-02" alt="">
                     </div>
                     <div class="col-md-5 box_02">
@@ -129,7 +132,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <img src="<?= LINK; ?>images/chandigarh-uni/placement/<?= $i+1; ?>.png"
-                                            class="w-100" alt="">
+                                            class="ranking" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -194,21 +197,21 @@
                             the performance of the student in CUCET 2024.</small>
                     </div>
                 </div>
-                <div class="row py-5">
-                    <div class="col-md-4 position-relative bg_height_01"
+                <div class="row pt-5 px-3 px-md-0">
+                    <div class="col-md-4 position-relative bg_height_01 mb-5 mb-md-0"
                         data-bgimg="<?= LINK; ?>images/chandigarh-uni/test/1.jpg">
                         <div class="box-003">
                             <h2 class="text-white"><span class="text-light-blue">SEIZE <br> YOUR GOLDEN <br> CHANCE
                                     <br></span>TO EARN <br>SCHOLARSHIPS <br> WORTH </h2>
                             <div class="bg-contain position-relative head_text_02"
                                 data-bgimg="<?= LINK; ?>images/chandigarh-uni/test/2.jpg">
-                                <p class="text-white ps-md-3 mb-0"><sup>$</sup> <span
-                                        class="display-2">170</span><br><sub> CRORES</sub></p>
+                                <p class="text-white ps-3 mb-0"><sup>$</sup> <span class="display-2">170</span><br><sub>
+                                        CRORES</sub></p>
                             </div>
                         </div>
                         <img src="<?= LINK; ?>images/chandigarh-uni/test/3.webp" class="test-img" alt="">
                     </div>
-                    <div class="col-md-4 box_02">
+                    <div class="col-md-4 box_02  mb-5 mb-md-0">
                         <div class="">
                             <h5 class="mb-0">CUCET Phase-I</h5>
                             <p>October 2023 - June 2024</p>
@@ -263,7 +266,7 @@
         <!-- ------------------------------------------------------------------------------------------------------------ -->
         <section class="py-5">
             <div class="container">
-                <div class="row py-5 position-relative bg_height_02"
+                <div class="row py-5 position-relative bg_height_02 px-3 px-md-0"
                     data-bgimg="<?= LINK; ?>images/chandigarh-uni/course/bg_01.jpg">
                     <div class="col-md-5">
                         <div class=" text-white">
@@ -272,6 +275,11 @@
                                 list below:</p>
                         </div>
                         <div class="">
+                            <?php 
+                                foreach ($b as $k => $v)
+                                    // print_r($v);
+                                    // die;
+                            ?>
                             <div class="form_01 my-md-3 w-100 ">
                                 <form class="enqui_form_ai" action="" method="post">
                                     <div class="">
@@ -288,81 +296,163 @@
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-group">
-                                                    <select class="form-select form_deptart" name="n_dept">
+                                                    <select class="form-select course_01 form_deptart" name="n_dept">
                                                         <option selected value="">Select Programme</option>
                                                         <optgroup label="engineering" class="d-none">
-                                                            <option data-course="engineering"
-                                                                value="(Aerospace Engineering)">Bachelor of
-                                                                Engineering (Aerospace Engineering)</option>
-                                                            <option data-course="engineering" value="Biotechnology">
-                                                                Bachelor of Engineering
-                                                                (Biotechnology) </option>
-                                                            <option data-course="engineering"
-                                                                value="(Biotechnology)- Lateral Entry">Bachelor of
-                                                                Engineering (Biotechnology)- Lateral Entry</option>
-                                                            <option data-course="engineering"
-                                                                value="(Computer Science & Engineering) - Lateral Entry">
-                                                                Bachelor of Engineering
-                                                                (Computer Science & Engineering) - Lateral Entry
-                                                            </option>
-                                                            <option data-course="engineering"
-                                                                value="(Computer Science and Engineering) (Computer Science and Business Systems)">
-                                                                Bachelor of Engineering (Computer Science and
-                                                                Engineering) (Computer Science and
-                                                                Business Systems) (In association with TCS)</option>
+                                                            <?php 
+                                                                $a = file_get_contents('course_01.json');
+                                                                $b = json_decode($a, true);
+                                                                foreach ($b as $k => $v) {
+                                                                    foreach ($v as $k1 => $v1) {
+                                                                    // print_r($k1);
+                                                            ?>
+                                                            <option data-course="engineering" value="<?= $k1;?>">
+                                                                <?= $v1['head']; ?></option>
+                                                            <?php 
+                                                                }}
+                                                            ?>
                                                         </optgroup>
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 text-center nav_01 d-grid">
+                                            <div class="col-md-12 text-center nav_01 d-grid table_css">
                                                 <!-- Button trigger modal -->
                                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                                     data-bs-target="#exampleModal">View Program</button>
-
+                                                <?php 
+                                                        foreach ($v as $k2 => $v2) {
+                                                        // print_r($k2);
+                                                    ?>
                                                 <!-- Modal -->
                                                 <div class="modal fade" id="exampleModal" tabindex="-1"
                                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
+
+                                                    <div class="modal-dialog course_data modal-lg d-none"
+                                                        data-course="<?= $k2;?>">
+
                                                         <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">
-                                                                    Modal title</h1>
+                                                            <div class="modal-header bg-blue text-start">
+                                                                <h1 class="modal-title fs-5  text-white"
+                                                                    id="exampleModalLabel">Program Details for
+                                                                    <?= $v2['head'];?></h1>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
-                                                            <div class="modal-body">
-                                                                ...
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
-                                                                    data-bs-dismiss="modal">Close</button>
-                                                                <button type="button" class="btn btn-primary">Save
-                                                                    changes</button>
+                                                            <div class="modal-body text-start">
+                                                                <div class="">
+                                                                    <h3 class="text-blue">ELIGIBILITY & FEE DETAILS</h3>
+                                                                    <p><b>Eligibility- </b><?= $v2['elebligity']; ?></p>
+
+                                                                    <table class="table table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>PROGRAM FEE</th>
+                                                                                <th>AMOUNT</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Semester Fee</td>
+                                                                                <td><?= $v2['fees']; ?></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="">
+                                                                    <h3 class="text-blue">CUCET PHASE I</h3>
+
+                                                                    <table class="table table-bordered">
+                                                                        <thead>
+
+                                                                            <tr>
+                                                                                <th>CUCET MARKS</th>
+                                                                                <th>CUCET SCHOLARSHIP OFFERED</th>
+                                                                                <th>AMOUNT TO PAY AFTER CUCET
+                                                                                    SCHOLARSHIP</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <?php 
+                                                                        $i = 0;
+                                                                        foreach (($v2['table_02']) as $k4 => $v4) {
+                                                                            // print_r($k4);
+                                                                            ?>
+                                                                            <tr>
+                                                                                <?php 
+                                                                                    foreach ($v4 as $k5 => $v5) {
+
+                                                                                ?>
+                                                                                <td><?= $v5;?></td>
+                                                                                <?php 
+                                                                                    }
+                                                                                ?>
+                                                                            </tr>
+                                                                            <?php
+                                                                        // }
+                                                                            $i++;
+                                                                        }
+                                                                    ?>
+                                                                        </tbody>
+                                                                    </table>
+
+                                                                </div>
+                                                                <div class="">
+                                                                    <table class="table table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>OTHER FEE DETAILS</th>
+                                                                                <th>AMOUNT</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Examination Fee</td>
+                                                                                <td>2500/- INR</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Security</td>
+                                                                                <td>2000/- INR</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
                                                             </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
+                                                <?php 
+                                                    }
+                                                ?>
                                             </div>
                                         </div>
                                     </div>
                                 </form>
                             </div>
+                            <?php 
+                                
+                            ?>
                         </div>
 
                     </div>
-                    <div class="col-md-4 text-white border-end">
+                    <div class="col-md-4 text-white border-end pt-4 pt-md-0">
                         <p>Following AIT MBA Specialized Programs are having different Scholarship slabs. <br><br>Please
                             visit the program webpage by clicking the links below for more information.</p>
                         <ul class="h_list_num list-unstyled course_01 lh-lg mb-3">
-                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA Banking & Financial Engineering
+                            <li class="1"><a href="https://www.cuchd.in/bfe/" target="_blank"><i
+                                        class="fa fa-link pe-3"></i>MBA Banking & Financial Engineering
                                     with SBI & Tally</a></li>
-                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA Strategic HR with AON
+                            <li class="1"><a href="https://www.cuchd.in/management/mba-strategic-hr.php"
+                                    target="_blank"><i class="fa fa-link pe-3"></i>MBA Strategic HR with AON
                                     Consulting</a></li>
-                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA Fintech with NSE Academy</a>
+                            <li class="1"><a href="https://www.cuchd.in/management/mba-fintech.php" target="_blank"><i
+                                        class="fa fa-link pe-3"></i>MBA Fintech with NSE Academy</a>
                             </li>
-                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA - Strategic Human Resources
+                            <li class="1"><a href="https://www.cuchd.in/management/mba-strategic-hr.php"
+                                    target="_blank"><i class="fa fa-link pe-3"></i>MBA - Strategic Human Resources
                                     (ITP)</a></li>
-                            <li class="1"><a href=""><i class="fa fa-link pe-3"></i>MBA (Applied Finance)</a></li>
+                            <li class="1"><a href="https://www.cuchd.in/finance-and-accounting/mba-applied-finance.php"
+                                    target="_blank"><i class="fa fa-link pe-3"></i>MBA (Applied Finance)</a></li>
                         </ul>
                         <p class="h4 fw-bold text-white">NOTE: <br><span class="h6 text-white fw-normal">The average
                                 outflow of scholarship will be 10%. </span></p>
@@ -388,30 +478,399 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>PROGRAMS FOR WHICH CUCET <br>
+                            IS COMPULSORY:</h3>
+                        <div class="row benefits">
+                            <?php
+                            $a = array("Bachelor of Engineering", "Bachelor of Pharmacy", "Pharm D.", "Master of Pharmacy", "Master of Pharmacy", "Master of Pharmacy", "Integrated Law programs", "Master of Business Administration (MBA) and Specialized MBA Programs", "Master of Pharmacy", "Master of Law");
+                            $b = array( "(B.E.)", "(B. Pharmacy)","", "(Industrial Pharmacy)", "(Pharmaceutics)", "(Pharmacology)", "(BA+LLB, BBA+LLB, B. Com + LLB)","", "(Pharmaceutical Chemistry)", "(LLM)");
+                            for ($i=0; $i < count($a); $i++) {
+                            ?>
+                            <div class="col-md-6 img_01 pb-2">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/chandigarh-uni/benefits/arrow.jpg" width="18px" height="18px"
+                                        alt="">
+                                    <div class="ps-md-3">
+                                        <p class="mb-0"><b><?= $a[$i];?></b><br><?= $b[$i];?></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                            } 
+                            ?>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>ONE EXAM MULTIPLE BENEFITS</h3>
+                        <p>At Chandigarh University, it is our aim to ensure that every deserving student gets the
+                            opportunity to achieve success and fulfill their dreams. With CU's CUCET scholarships
+                            support program, we are investing in our collective future and ensuring that students can
+                            maximize their success by:</p>
+                        <div class="row benefits">
+                            <?php
+                            $a = array("Access To Quality Education", "Assures Career Advantage", "Bridging Financial Gap", "Special Privileges For 100% Scholarship Students");
+                            $b = array(  "Fulfill your dream to study at a prestigious university by receiving a merit-based scholarship.", "Earning a scholarship is prestigious. Stand out in comparison to others during your job search by earning a scholarship.", "Pursue your dreams and ambitions with CUCET scholarships. Financial constraints will not pause your academic journey.", "Students with a 100% scholarship in the CUCET 2024 will receive special privileges, such as a chance to be a part of the Board of Studies at CU.");
+                            for ($i=0; $i < count($a); $i++) {
+                            ?>
+                            <div class="col-md-6 img_01 pb-3">
+                                <div class="d-flex align-items-center">
+                                    <img src="images/chandigarh-uni/benefits/star.jpg" width="18px" height="18px"
+                                        alt="">
+                                    <div class="ps-md-3">
+                                        <p class="mb-0"><b><?= $a[$i];?></b><br><?= $b[$i];?></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                            } 
+                            ?>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section>
+            <div class="container py-5">
+                <div class="row">
+                    <h3 class="text-center fw-bold ">OUR INCREDIBLE ACHIEVEMENTS</h3>
+                </div>
+                <div class="row px-3 px-md-0">
+                    <?php include "admission-details.php";?>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section class="bg-blue pb-5">
+            <div class="container py-5  mb-md-5">
+                <div class="row mb-5">
+                    <h3 class="text-center text-white fw-bold ">PLACEMENT HIGHLIGHTS 2023-24</h3>
+                </div>
+                <div class="row pb-5 mb-5">
+                    <?php
+                    $a = array( "9000+", "900+", "1.7CR", "54.75LPA", "20LPA", "15LPA", "10LPA", "5LPA");
+                    $b = array( "Placement <br> Offers", "Company <br> Visits", "Highest International <br>Package Offered", "Highest National <br> Package Offered", "Package Offered by <br>30+ Companies", "Package Offered by <br> 50+ Companies", "Package Offered by <br> 100+ Companies", "Package Offered by <br> 400+ Companies");
+                    $c = array( " border-end border-bottom", " border-end border-bottom", " border-end border-bottom", " border-bottom", " border-end", "border-end", "border-end", "");
+                    for ($i=0; $i < count($a); $i++) {
+                ?>
+                    <div class="col-md-3 col-6 <?= $c[$i];?>">
+                        <div class=" pb-3">
+                            <h6 class="display-4 mb-0 fw-bold text-white"><?= $a[$i];?></h6>
+                            <small class="text-white"><?= $b[$i];?></small>
+                        </div>
+                    </div>
+                    <?php
+                } 
+                ?>
+                    <div class="text-center pt-3">
+                        <button class="btn btn-primary">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- <section class="bg-white"> -->
+        <div class="container py-5 placements">
+            <div class="row  align-items-stretch  project-carousel owl-carousel">
+                <?php
+                    $a = array( "1", "2", "3", "4", "5");
+                    $b = array( "Dinesh Potla", " Vandana Vandana", "Abhishek Dimri", "Ameya Ohri", "Shanya Trehan");
+                    $c = array( "IBM CSE Cloud <br> Computing Student", "CSE Student", "IBM CSE Cloud <Computing Student>", "CSE General <br> Student", "CSE General <br> Student");
+                    $d = array( "52.11", "54.75", "44", "52.11", "51");
+                    for ($i=0; $i < count($a); $i++) {
+                ?>
+                <div class="col-md-12 position-relative bg_height_01 pb-5 mb-md-0 px-md-4"
+                    data-bgimg="<?= LINK; ?>images/chandigarh-uni/test/1.jpg">
+                    <div class="company">
+                        <img src="images/chandigarh-uni/placements/0<?= $a[$i];?>.webp" class="" alt="">
+                    </div>
+                    <div class="text-white py-5   position-relative z_index_01">
+                        <h5 class="text-white display-6 mb-0"><?= $b[$i];?></h5>
+                        <small><?= $c[$i];?></small>
+                        <div class="head-text_03  pb-5">
+                            <span class="display-2 text-yellow z_index_01  position-relative  ps-5"><sup
+                                    class="fs-5">$</sup><?= $d[$i];?>
+                                <sub class="fs-5">LPA</sub></span>
+                        </div>
+                    </div>
+                    <img src="images/chandigarh-uni/placements/<?= $a[$i];?>.webp" class="student" alt="">
+                </div>
+
+                <?php
+                    } 
+                ?>
+            </div>
+        </div>
+        <!-- </section> -->
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------------------------------------------- -->
+
+        <section>
+            <div class="container py-5 ">
+                <div class="row justify-content-center company-carousel owl-carousel">
+                    <?php
+                    for ($i=1; $i < 17; $i++) {
+                ?>
+                    <div class="col-md-12 company_01">
+                        <img src="images/chandigarh-uni/company/<?= $i+1;?>.webp" alt="">
+                    </div>
+
+                    <?php
+                    } 
+                ?>
+                </div>
+            </div>
+        </section>
+        <!-- ---------------------------------------------------------------------------- -->
+        <!-- ---------------------------------------------------------------------------- -->
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section>
+            <div class="container py-5 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h3 class="text-center fw-bold ">VENTURE INTO ENTREPRENEURSHIP</h3>
+                        <p class="">Nurturing leaders of tomorrow, by building the foundation for their dreams and
+                            equipping them with global exposure and industry support.</p>
+                    </div>
+                </div>
+                <div class="row  align-items-stretch ">
+                    <?php
+                    $a = array( "1", "2", "3");
+                    $b = array( "150", "7", "50");
+                    $c = array( "Start-ups running successfully", "Start-ups Recognised by Start-up India", "Companies with more than 50 Lakh Turnover");
+                    for ($i=0; $i < count($a); $i++) {
+                ?>
+                    <div class="col-md-4 venture_01 position-relative  bg_height_03"
+                        data-bgimg="<?= LINK; ?>images/chandigarh-uni/venture/<?= $a[$i];?>.webp">
+                        <div class="text-white  ">
+                            <div class="head-text_03 ">
+                                <span class="display-2 text-yellow">
+                                    <?= $b[$i];?>+
+                                    <sub class="fs-5"></sub></span>
+                                <p><?= $c[$i];?></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php
+                    } 
+                ?>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section class="bg-light-blue">
+            <div class="container placements_01  students-carousel owl-carousel">
+                <?php
+                   $a = array( "1", "2", "3", "4", "5");
+                   $b = array( "Dinesh Potla", " Vandana Vandana", "Abhishek Dimri", "Ameya Ohri", "Shanya Trehan");
+                   $c = array( "IBM CSE Cloud Computing Student", "CSE Student", "IBM CSE Cloud Computing Student", "CSE General  Student", "CSE General Student");
+                   $d = array( "52.11", "54.75", "44", "52.11", "51");
+                   for ($i=0; $i < count($a); $i++) {
+                ?>
+                <div class="row justify-content-center position-relative">
+                    <div class="col-md-6 text-center">
+                        <img src="images/chandigarh-uni/placements/<?= $a[$i];?>.webp" class="student_02" alt="">
+                    </div>
+                    <div class="col-md-6  py-5  text-white">
+                        <h3 class="text-white">Countless Opportunities at One Place</h3>
+                        <p>There is nothing wrong in saying that Chandigarh University is a placement workshop for CSE
+                            engineering. If you want to be a CSE engineer, choose Chandigarh University as it offers
+                            100% placement in this sector. Thank you Chandigarh University for getting me placed in
+                            Deloitte. </p>
+                        <div class="">
+                            <h4 class="text-white"><?= $b[$i];?></h4>
+                            <span>- <?= $c[$i];?> <br> (Batch 2017-2021)</span>
+                            <div class="bg-white company_01">
+                                <img src="images/chandigarh-uni/placements/0<?= $a[$i];?>.webp" class="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php
+                    } 
+                ?>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section class="feature " data-bgimg="<?= LINK; ?>images/chandigarh-uni/feature/bg_01.webp">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-2 bg-blue py-2 text-center logo_01 rounded-3">
+                        <img src="<?= LINK; ?>images/chandigarh-uni/feature/1.webp" width="150px" alt="">
+                    </div>
+                </div>
+                <div class="row position-relative z_index_01">
+                    <div class="col-md-5 text-white">
+                        <h2 class="text-white">Space Science &amp; Technology Research Center</h2>
+                        <p>Kalpana Chawla Centre for Research in Space Science and Technology is paving the way for
+                            advancement in space technology with discovery, research, and education. The Centre is
+                            providing satellite design training to students from 21 nations and communicating with 28
+                            countries that are part of the Satellite Networked Open Ground Station (SatNOGS). Hon’ble
+                            Defence Minister of India, Shri Rajnath SIngh inaugurated the KCCRSST at Chandigarh
+                            University.</p>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="">
+                            <h2 class="text-white">DISTINCTIVE FEATURE <br>OF THE GROUND STATION</h2>
+                        </div>
+                        <div class="row">
+                            <?php
+                            $a = array(  "Can communicate with SatNOGS networked ground stations across the globe", "Research on 3D Printed Aluminum / Plastic structures that can be used in SPACE explorations", "Thermal study of materials in vacuum", "Star gazing centre", "Experimental studies on compact structures of satellite for LEO", "Experimental materials for antennae and deployment methods", "Unmanned aerial vehicle design", "Model rocketry lab");
+                            for ($i=0; $i < count($a); $i++) {
+                        ?>
+                            <div class="col-md-6 position-relative ps-5">
+                                <small class="star text-white"><?= $a[$i];?></small>
+                            </div>
+                            <?php
+                            } 
+                        ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 ">
+                        <iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/nMJV4MbwEYI?si=setnjzDV0NQEPya8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-8 text-center pt-5">
+                        <h2>GAIN GLOBAL EXPOSURE THROUGH EXTENSIVE INTERNATIONAL NETWORK</h2>
+                    </div>
+
+                </div>
+
+                <div class="row  justify-content-center">
+                <?php
+                            $a = array("490","1700","340");
+                            $b = array("Collaborations","Students","Internships");
+                            $c = array("with Top Ranked Foreign Universities in 95+ countries","Traveled Abroad for Semester, Summer & Cultural Exchange Programs","in Walt Disney, USA (Highest in the Region)");
+                            for ($i=0; $i < count($a); $i++) {
+                        ?>
+                    <div class="col-md-4 text-center p-md-5">
+                        <h2 class="display-3 text-light-blue fw-bold mb-0"><?= $a[$i];?>+</h2>
+                        <h4 class="fw-bold"><?= $b[$i];?></h4>
+                        <p><?= $c[$i];?></p>
+                    </div>
+                    <?php
+                        } 
+                    ?>
+                </div>
 
             </div>
-    </div>
-    </section>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="<?= LINK; ?>js/bootstrap.min.js"></script>
-    <script src="<?= LINK; ?>lib/wow/wow.min.js"></script>
-    <script src="<?= LINK; ?>lib/easing/easing.min.js"></script>
-    <script src="<?= LINK; ?>lib/waypoints/waypoints.min.js"></script>
-    <script src="<?= LINK; ?>lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="<?= LINK; ?>lib/lightbox/js/lightbox.min.js"></script>
-    <script src="<?= LINK; ?>js/main.js"></script>
-    <script type="text/javascript">
-        var s = document.createElement("script");
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://widgets.in8.nopaperforms.com/emwgts.js";
-        document.body.appendChild(s);
-    </script>
-    <!-- Start of HubSpot Embed Code -->
-    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/45253889.js"></script> -->
-    <!-- End of HubSpot Embed Code -->
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------ -->
+        <section class="  position-relative bg_height_02 " 
+                    data-bgimg="<?= LINK; ?>images/chandigarh-uni/city/bg_01.webp">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6">
+                        <h2 class="display-3  text-white">CHANDIGARH, THE CITY BEAUTIFUL</h2>
+                        <h5  class="text-white">Chandigarh has been ranked Best among States & Union Territories in the field of education.- HRD Report</h5>
+                    </div>
+                </div>
+                <div class="row   pt-5 city-carousel owl-carousel">
+                <?php
+                            $a = array("Explore ","Well-Connected","Travel","Business");
+                            $b = array("You can engulf yourself in the rare epitome of modernization and architectural wonder at Chandigarh. From the World Heritage site in Capitol complex to the world renowned Rock Garden there is so much to explore in this wonderful city.","Chandigarh is well connected via road, rail and recently built International airport connects the city to the world. Wide, well maintained roads and parking spaces all over the city ease local transport.","Chandigarh is in the foothills of the Shivalik Range, which means you can visit quiet and mesmerizing hill stations such as Shimla, Kasauli and Solan. Perfect for a weekend getaway to rejuvenate yourself.","Chandigarh University has become North India's central university for the IT and Service Industry. Numerous opportunities are available for young professionals such as plug and play facilities in state-of-the-art environment friendly buildings.");
+                            $c = array("","","","");
+                            $d = array("1","2","3","4");
+                            for ($i=0; $i < count($a); $i++) {
+                        ?>
+                    <div class="col-md-12 city">
+                        <div class="d-flex align-items-center py-3">
+                            <h2 class="fw-bold text-white mb-0 "><?= $a[$i];?></h2>
+                            <i class="fab fa-instagram text-yellow ps-3 fs-2"></i>
+                        </div>
+                        <p class="text-white"><?= $b[$i];?></p>
+                        <img src="images/chandigarh-uni/city/<?= $d[$i];?>.webp" class="" alt="">
+                    </div>
+
+                    <?php
+                        } 
+                    ?>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+        <?php include "footer.php"; ?>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="<?= LINK; ?>js/bootstrap.min.js"></script>
+        <script src="<?= LINK; ?>lib/wow/wow.min.js"></script>
+        <script src="<?= LINK; ?>lib/easing/easing.min.js"></script>
+        <script src="<?= LINK; ?>lib/waypoints/waypoints.min.js"></script>
+        <script src="<?= LINK; ?>lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="<?= LINK; ?>lib/lightbox/js/lightbox.min.js"></script>
+        <script src="<?= LINK; ?>js/main.js"></script>
+        <script type="text/javascript">
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://widgets.in8.nopaperforms.com/emwgts.js";
+            document.body.appendChild(s);
+        </script>
+        <!-- Start of HubSpot Embed Code -->
+        <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/45253889.js"></script> -->
+        <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>

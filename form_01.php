@@ -1,4 +1,4 @@
-<div class="form_01 my-md-3 w-100 ">
+<div class="form_01 my-3 w-100 ">
     <form class="enqui_form_ai" action="" method="post">
         <div class="">
             <!-- <h3 class="t-lgreen pb-3 text-blue" id="exampleModalLabel">Enquire Now</h3> -->
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 text-center nav_01 d-grid">
+                <div class="col-md-6 mb-3 text-center nav_01 d-grid">
                     <button type="submit" class="btn px-5 c_btn  border-pill">Submit</button>
                     <div class="success1 text-success"></div>
                     <div class="error1 text-danger"></div>
