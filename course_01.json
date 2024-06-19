@@ -1,0 +1,75 @@
+{
+  "engineering": {
+
+    "Aerospace": {
+      "head": "Bachelor of Engineering (Aerospace Engineering)",
+      "elebligity": "Three year Diploma with at least 50% marks in relevant branch of Engineering / Technology. OR Passed B.Sc. Degree from a recognized University as defined by UGC,with at least 50% marks and passed 10+2 examination with Physics as a subject. Provided all Basic Science and Program Core Courses in first year curriculum are covered in the Diploma / BSc degree. In case of deficient prerequisites, bridge courses need to be completed as specified by the equivalence committee",
+      "fees": "102650/- INR",
+      "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
+
+      "table_02": 
+      {
+        "marks":{
+          "CUCET MARKS": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"]
+        },
+        "scholarships":{
+          "CUCET SCHOLARSHIP OFFERED": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"]
+        },
+        "amounts":{
+          "AMOUNT TO PAY AFTER CUCET SCHOLARSHIP": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+        }
+      }
+
+    },
+
+    "Biotechnology": {
+      "head": "Bachelor of Engineering (Biotechnology) ",
+      "elebligity": "Three year Diploma with at least 50% marks in relevant branch of Engineering / Technology. OR Passed B.Sc. Degree from a recognized University as defined by UGC,with at least 50% marks and passed 10+2 examination with Physics as a subject. Provided all Basic Science and Program Core Courses in first year curriculum are covered in the Diploma / BSc degree. In case of deficient prerequisites, bridge courses need to be completed as specified by the equivalence committee",
+      "fees": "102650/- INR",
+      "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
+
+      "table_02": {
+        "marks": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"],
+        "scholarships": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"],
+        "amounts": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+      }
+    },
+    "Biotechnology-Lateral-Entry": {
+      "head": "Bachelor of Engineering (Biotechnology)- Lateral Entry",
+      "elebligity": "Three year Diploma with at least 50% marks in relevant branch of Engineering / Technology. OR Passed B.Sc. Degree from a recognized University as defined by UGC,with at least 50% marks and passed 10+2 examination with Physics as a subject. Provided all Basic Science and Program Core Courses in first year curriculum are covered in the Diploma / BSc degree. In case of deficient prerequisites, bridge courses need to be completed as specified by the equivalence committee",
+      "fees": "102650/- INR",
+      "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
+
+      "table_02": {
+        "marks": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"],
+        "scholarships": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"],
+        "amounts": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+      }
+    },
+    "Computer-Science-Engineering-Lateral-Entry": {
+      "head": "Bachelor of Engineering (Computer Science & Engineering) - Lateral Entry",
+      "elebligity": "Three year Diploma with at least 50% marks in relevant branch of Engineering / Technology. OR Passed B.Sc. Degree from a recognized University as defined by UGC,with at least 50% marks and passed 10+2 examination with Physics as a subject. Provided all Basic Science and Program Core Courses in first year curriculum are covered in the Diploma / BSc degree. In case of deficient prerequisites, bridge courses need to be completed as specified by the equivalence committee",
+      "fees": "102650/- INR",
+      "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
+
+      "table_02": {
+        "marks": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"],
+        "scholarships": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"],
+        "amounts": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+      }
+    },
+    "cs-Engineering-cs-Business-Systems": {
+      "head": "Bachelor of Engineering (Computer Science and Engineering) (Computer Science and Business Systems) (In association with TCS)",
+      "elebligity": "Three year Diploma with at least 50% marks in relevant branch of Engineering / Technology. OR Passed B.Sc. Degree from a recognized University as defined by UGC,with at least 50% marks and passed 10+2 examination with Physics as a subject. Provided all Basic Science and Program Core Courses in first year curriculum are covered in the Diploma / BSc degree. In case of deficient prerequisites, bridge courses need to be completed as specified by the equivalence committee",
+      "fees": "102650/- INR",
+      "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
+
+      "table_02": {
+        "marks": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"],
+        "scholarships": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"],
+        "amounts": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+      }
+    }
+  }
+
+}

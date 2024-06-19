@@ -27,33 +27,43 @@
 
 
 
+
     $('.form_servi').on('change', function () {
         let a = $(this).val()
         $('.form_deptart optgroup').addClass('d-none')
         $('.form_deptart optgroup[label="' + a + '"]').removeClass('d-none')
+      })
+
+
+
+    $('.course_01').on('change', function () {
+        let a = $(this).val()
+        $('.course_data').addClass('d-none')
+        $('.course_data').removeClass('d-none')
     })
 
-      // counter in placement
-      let q = 0;
-      $(window).scroll(function () {
-          let b = $(window).scrollTop()
-          if (q == 0) {
-              if (b > 3000) {
-                  $('.count').each(function () {
-                      $(this).prop('Counter', 0).animate({
-                          Counter: $(this).text()
-                      }, {
-                          duration: 5000,
-                          easing: 'swing',
-                          step: function (now) {
-                              $(this).text(Math.ceil(now));
-                          }
-                      });
-                  });
-                  q++
-              }
-          }
-      })
+
+    // counter in placement
+    let q = 0;
+    $(window).scroll(function () {
+        let b = $(window).scrollTop()
+        if (q == 0) {
+            if (b > 3000) {
+                $('.count').each(function () {
+                    $(this).prop('Counter', 0).animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 5000,
+                        easing: 'swing',
+                        step: function (now) {
+                            $(this).text(Math.ceil(now));
+                        }
+                    });
+                });
+                q++
+            }
+        }
+    })
 
 
     // Project and Testimonial carousel
@@ -64,7 +74,7 @@
         loop: true,
         center: false,
         dots: false,
-        nav: true,
+        nav: false,
         navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
@@ -80,12 +90,37 @@
                 items: 2
             },
             992: {
-                items: 2
+                items: 3
+            }
+        }
+    });
+    // Project and Testimonial carousel
+    $(".company-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        loop: true,
+        center: false,
+        dots: true,
+        nav: false,
+        navText: [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 2.1
+            },
+            576: {
+                items: 3
+            },
+            992: {
+                items: 7.1
             }
         }
     });
 
-    $(".h_our").owlCarousel({
+    $(".city-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
         margin: 25,
@@ -99,16 +134,127 @@
         ],
         responsive: {
             0: {
-                items: 2
+                items: 1
             },
             576: {
                 items: 2
             },
-            768: {
-                items: 3
-            },
             992: {
                 items: 4
+            }
+        }
+    });
+    
+    $(".facilities-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        loop: true,
+        center: false,
+        dots: false,
+        nav: true,
+        navText: [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 2
+            },
+            992: {
+                items: 3
+            }
+        }
+    });
+
+    
+    // Project and Testimonial carousel
+    $(".students-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        loop: true,
+        center: false,
+        dots: true,
+        nav: true,
+        navText: [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            992: {
+                items: 1
+            }
+        }
+    });
+
+    
+    
+    // Project and Testimonial carousel
+    $(".infra-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        loop: true,
+        center: false,
+        dots: true,
+        nav: true,
+        navText: [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            992: {
+                items: 1
+            }
+        }
+    });
+
+    $(".h_our").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        loop: true,
+        center: false,
+        dots: true,
+        nav: false,
+        navText: [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 2.1
             }
         }
     });
@@ -172,7 +318,7 @@
             // let url = $(this).find(".ngaction").data("nsform");
             let url = 'sen_mail.php';
             var btn = true;
-    
+
             nform.find('input, textarea,select').each(function () {
                 var n = $(this).val();
                 if ($.trim(n) == "") {
@@ -214,7 +360,7 @@
             console.log(btn);
             return false;
         })
-        $(".dropdown-submenu > a").on("click", function(e) {
+        $(".dropdown-submenu > a").on("click", function (e) {
             // Prevent the default behavior of the link
             e.preventDefault();
             // Toggle the display of the sub-sub dropdown menu
@@ -223,8 +369,21 @@
             // Stop the event propagation to the parent elements
             e.stopPropagation();
         });
-    
+
     });
 
-    
+    $(function () {
+        var dtToday = Date();
+        var month = dtToday.getMonth() + 1;
+        var day = dtToday.getDate();
+        var year = dtToday.getFullYear();
+        if (month < 10)
+            month = '0' + month.toString();
+        if (day < 10)
+            day = '0' + day.toString();
+        var maxDate = year + '-' + month + '-' + day;
+        $('#inputdate').attr('min', maxDate);
+    });
+
+
 })(jQuery);
