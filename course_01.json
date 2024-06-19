@@ -7,12 +7,20 @@
       "fees": "102650/- INR",
       "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
 
-      "table_02": {
-        "marks": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"],
-        "scholarships": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"],
-        "amounts": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+      "table_02": 
+      {
+        "marks":{
+          "CUCET MARKS": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"]
+        },
+        "scholarships":{
+          "CUCET SCHOLARSHIP OFFERED": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"]
+        },
+        "amounts":{
+          "AMOUNT TO PAY AFTER CUCET SCHOLARSHIP": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+        }
       }
-    },  
+
+    },
 
     "Biotechnology": {
       "head": "Bachelor of Engineering (Biotechnology) ",

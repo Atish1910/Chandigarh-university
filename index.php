@@ -154,7 +154,7 @@
                 <div class="row ">
                     <?php
                         $a = array("1","2","3","4");
-                        $b = array("","mt-5","","mt-5");
+                        $b = array("mt-5 mt-md-0","mt-5 ","mt-5 mt-md-0","mt-5");
                         $c = array("","box-002","","box-002");
                         $d = array("Available By","Student Diversity from","Ensuring","Hallmark of Academic");
                         $e = array("1.30 Lakh+ <br>Students","All 28 Indian States and 8 Union Territories","Inclusivity and Equality","Accomplishment and Potential");
@@ -360,38 +360,41 @@
                                                                 </div>
                                                                 <div class="">
                                                                     <h3 class="text-blue">CUCET PHASE I</h3>
-
                                                                     <table class="table table-bordered">
                                                                         <thead>
-
                                                                             <tr>
-                                                                                <th>CUCET MARKS</th>
-                                                                                <th>CUCET SCHOLARSHIP OFFERED</th>
-                                                                                <th>AMOUNT TO PAY AFTER CUCET
-                                                                                    SCHOLARSHIP</th>
+                                                                                <?php 
+                                                                                    $i = 0;
+                                                                                    foreach (($v2['table_02']) as $k4 => $v4) {
+                                                                                    foreach (($v4) as $k5 => $v5) {
+                                                                                    // print_r($k5);
+                                                                                    ?>
+                                                                                <th><?= $k5;?></th>
+                                                                                <?php
+                                                                                    }
+                                                                                }
+                                                                                ?>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
-                                                                            <?php 
-                                                                        $i = 0;
-                                                                        foreach (($v2['table_02']) as $k4 => $v4) {
-                                                                            // print_r($k4);
+                                                                        <?php 
+                                                                            $i = 0;
+                                                                            foreach (($v5) as $k6 => $v6) {
+                                                                                print_r($v6);
                                                                             ?>
                                                                             <tr>
-                                                                                <?php 
-                                                                                    foreach ($v4 as $k5 => $v5) {
-
-                                                                                ?>
-                                                                                <td><?= $v5;?></td>
-                                                                                <?php 
-                                                                                    }
-                                                                                ?>
+                                                                            <?php 
+                                                                            foreach (($v4) as $k5 => $v5) {
+                                                                                // print_r($v6);
+                                                                            ?>
+                                                                                <td><?= $v6;?></td>
+                                                                                <?php
+                                                                            }
+                                                                            ?>
                                                                             </tr>
                                                                             <?php
-                                                                        // }
-                                                                            $i++;
-                                                                        }
-                                                                    ?>
+                                                                            $i++;}
+                                                                        ?>
                                                                         </tbody>
                                                                     </table>
 
@@ -580,7 +583,7 @@
                     <?php
                 } 
                 ?>
-                    <div class="text-center pt-3">
+                    <div class="text-center pt-3 pb-5 pb-md-0">
                         <button class="btn btn-primary">Apply Now</button>
                     </div>
                 </div>
@@ -774,7 +777,7 @@
 
         <!-- ------------------------------------------------------------------------------------------------------------------ -->
         <!-- ------------------------------------------------------------------------------------------------------------------ -->
-        <section class="py-5">
+        <section class="py-5 bg-light">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-8 ">
@@ -791,7 +794,7 @@
                 </div>
 
                 <div class="row  justify-content-center">
-                <?php
+                    <?php
                             $a = array("490","1700","340");
                             $b = array("Collaborations","Students","Internships");
                             $c = array("with Top Ranked Foreign Universities in 95+ countries","Traveled Abroad for Semester, Summer & Cultural Exchange Programs","in Walt Disney, USA (Highest in the Region)");
@@ -811,33 +814,198 @@
 
         </section>
 
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section class="py-5">
+            <div class="container position-relative z_index_01 mb_30">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center pb-3">
+                        <h2>OUR OFFICE OF INTERNATIONAL RELATIONS</h2>
+                        <p>offers exclusive opportunities to explore the world</p>
+                    </div>
+
+                </div>
+
+                <div class="row  justify-content-center">
+                    <?php
+                        $a = array( "INTERNATIONAL SUMMER/WINTER PROGRAMS", "SEMESTER ABROAD/EXCHANGE PROGRAMS", "HIGHER EDUCATION PROGRAMS", "GLOBAL IMMERSION PROGRAMS", "INTERNATIONAL PLACEMENTS", "SEMESTER ABROAD/EXCHANGE PROGRAMS");
+                        $b = array(  "Short duration programs of 2-4 weeks are perfect way for students to balance their desire for international exposure with the academic life", "An opportunity to complete your semester abroad which further add to your international experience and let you grow your network both on personal & professional level.", "An opportunity to visit international universities for certificate programs or to pursue master's degree in decided field.", "An opportunity to be professionally attached to multinational companies and start-ups. It aims to provide CU students the experience of studying and working abroad.", "Fortune 500 Global & National Companies such as Microsoft, Google, Amazon and others have been consistently among the Top Recruiters at Chandigarh University Placement Drives.", "Fortune 500 Global & National Companies such as Microsoft, Google, Amazon and others have been consistently among the Top Recruiters at Chandigarh University Placement Drives.");
+                        $c = array( "1", "2", "3", "4", "5","3");
+                        for ($i=0; $i < count($a); $i++) {
+                    ?>
+                    <div class="col-md-4 mb-4 d-flex align-items-stretch">
+                        <div class="bg-blue rounded-3 p-4 inter text-white">
+                            <h4 class="text-white fw-bold"><?= $a[$i];?></h4>
+                            <small><?= $b[$i];?></small>
+                            <div class="pt-3">
+                                <img src="images/chandigarh-uni/inter/<?= $c[$i];?>.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                    } 
+                ?>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="d-md-block d-none">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/chandigarh-uni/slider/1.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/chandigarh-uni/slider/2.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/chandigarh-uni/slider/3.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h2 class="fw-bold">WORLD-CLASS CAMPUS INFRASTRUCTURE</h2>
+                        <p>Known for its academic excellence and cutting edge research, Chandigarh University boasts
+                            world-class infrastructure sprawling over 250 acres.</p>
+                        <div class="">
+                            <h5 class="fw-bold text-blue mb-0">30+</h5>
+                            <small>Industry-Sponsored Advanced Research Labs (Microsoft, HPE, IBM, RedHat, etc.)
+                                <br><br></small>
+
+                            <h5 class="fw-bold text-blue mb-0">14 CENTERS OF EXCELLENCE</h5>
+                            <small>(Industry-collaborated Labs) launched on campus by top MNCs<br><br></small>
+
+                            <h5 class="fw-bold text-blue mb-0">350+</h5>
+                            <small>Corporate Mentors guide students in their research and entrepreneurial
+                                endeavors<br><br></small>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-7  infra position-relative  rounded-3 over_hidden p-0  infra-carousel owl-carousel">
+                        <?php
+                            $a = array( "1", "2", "3", "4");
+                            $b = array( "HODOPHILE is a travel company with the vision of adding unforgettable memories in the memory baskets of its customers. It organizes Group Trips, Corporate Trips, Customized Trips, etc. and has served 300 customers so far.", "I always wanted to be my own boss. So after joining CU, I immediately registered myself with Technology Business Incubator (TBI). Access to seed funding, continuous guidance and start-up support facilities at CU TBI gave me the platform to turn my idea into a business.", "An IoT system that controls the farm using Android Application and gives a real-time value of all farming necessities that are further made visible to a farmer on his smart phone application.", "SewaPoint is a Hyper-local Fintech start-up based on ITeS through which we render the mandatory Govt. & Banking services to the BoP, preferably the one residing in the rural areas.");
+                            $c = array( "Apurva Chaudhary", "Jai Chachra", "Praveen Soni", "Nilesh Sinha");
+                            $d = array( "Co-Founder, HODOPHILE Travel Company", "CEO- Just Charge Company", "Founder and CEO, Team DOTS", "CEO- SewaPoint, Service Consultant");
+                            for ($i=0; $i < count($a); $i++) {
+                        ?>
+                        <div class="row justify-content-center position-relative">
+                            <div class="d-flex align-items-stretch">
+                                <div class="">
+                                    <div class="col-md-12 text-center">
+                                        <img src="images/chandigarh-uni/infra/<?= $a[$i];?>.webp" class="student_02"
+                                            alt="">
+                                    </div>
+                                    <div class="col-md-12  bg-blue  rounded-3  px-5 py-4  text-white">
+                                        <p><?= $b[$i];?></p>
+                                        <div class="bg-light-blue rounded-3 d-inline-block px-3 py-2">
+                                            <h4 class="text-white"><?= $c[$i];?></h4>
+                                            <span><?= $d[$i];?></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php
+                        } 
+                    ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <section>
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center">
+                        <h3 class="text-center fw-bold ">STATE-OF-THE ART RESEARCH FACILITIES</h3>
+                        <p class="">With cutting-edge laboratories and industry sponsored Centres of Excellence for
+                            research, CU provides an ideal environment for engineering education.</p>
+                    </div>
+                </div>
+                <div class="row   pt-5 facilities-carousel owl-carousel">
+                    <?php
+                            $a = array("1","2","3","4","5");
+                            $b = array("XRD Lab","Artificial Intelligence Lab","Mol-Biology Lb","FMS Lab","3D Painting Lab");
+                            for ($i=0; $i < count($a); $i++) {
+                        ?>
+                    <div class="col-md-12 d-flex align-items-stretch justify-content-center  city">
+                        <div class="rounded-3 over_hidden">
+                            <img src="images/chandigarh-uni/facilities/<?= $a[$i];?>.webp" class="" alt="">
+                            <div class="d-flex align-items-center p-3  justify-content-between bg-blue">
+                                <h5 class="fw-bold mb-0 text-white"><?= $b[$i];?></h5>
+                                <p class="mb-0"><a href="">Read More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                        } 
+                    ?>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+
+
         <!-- ------------------------------------------------------------------------------------------------------------ -->
-        <section class="  position-relative bg_height_02 " 
-                    data-bgimg="<?= LINK; ?>images/chandigarh-uni/city/bg_01.webp">
+        <section class="  position-relative bg_height_02 pt_90 rounded-0"
+            data-bgimg="<?= LINK; ?>images/chandigarh-uni/city/bg_01.webp">
             <div class="container">
                 <div class="row ">
                     <div class="col-md-6">
                         <h2 class="display-3  text-white">CHANDIGARH, THE CITY BEAUTIFUL</h2>
-                        <h5  class="text-white">Chandigarh has been ranked Best among States & Union Territories in the field of education.- HRD Report</h5>
+                        <h5 class="text-white">Chandigarh has been ranked Best among States & Union Territories in the
+                            field of education.- HRD Report</h5>
                     </div>
                 </div>
                 <div class="row   pt-5 city-carousel owl-carousel">
-                <?php
+                    <?php
                             $a = array("Explore ","Well-Connected","Travel","Business");
                             $b = array("You can engulf yourself in the rare epitome of modernization and architectural wonder at Chandigarh. From the World Heritage site in Capitol complex to the world renowned Rock Garden there is so much to explore in this wonderful city.","Chandigarh is well connected via road, rail and recently built International airport connects the city to the world. Wide, well maintained roads and parking spaces all over the city ease local transport.","Chandigarh is in the foothills of the Shivalik Range, which means you can visit quiet and mesmerizing hill stations such as Shimla, Kasauli and Solan. Perfect for a weekend getaway to rejuvenate yourself.","Chandigarh University has become North India's central university for the IT and Service Industry. Numerous opportunities are available for young professionals such as plug and play facilities in state-of-the-art environment friendly buildings.");
                             $c = array("","","","");
                             $d = array("1","2","3","4");
                             for ($i=0; $i < count($a); $i++) {
                         ?>
-                    <div class="col-md-12 city">
-                        <div class="d-flex align-items-center py-3">
-                            <h2 class="fw-bold text-white mb-0 "><?= $a[$i];?></h2>
-                            <i class="fab fa-instagram text-yellow ps-3 fs-2"></i>
+                    <div class="col-md-12 d-flex align-items-stretch justify-content-center h_300 city">
+                        <div class="">
+                            <div class="d-flex align-items-center  justify-content-center  py-3">
+                                <h2 class="fw-bold text-white mb-0 "><?= $a[$i];?></h2>
+                                <i class="fab fa-instagram text-yellow ps-3 fs-2"></i>
+                            </div>
+                            <p class="text-white"><?= $b[$i];?></p>
+                            <img src="images/chandigarh-uni/city/<?= $d[$i];?>.webp" class="" alt="">
                         </div>
-                        <p class="text-white"><?= $b[$i];?></p>
-                        <img src="images/chandigarh-uni/city/<?= $d[$i];?>.webp" class="" alt="">
                     </div>
-
                     <?php
                         } 
                     ?>
