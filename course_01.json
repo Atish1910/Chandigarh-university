@@ -7,19 +7,17 @@
       "fees": "102650/- INR",
       "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
 
-      "table_02": 
-      {
-        "marks":{
+      "table_02": {
+        "marks": {
           "CUCET MARKS": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"]
         },
-        "scholarships":{
+        "scholarships": {
           "CUCET SCHOLARSHIP OFFERED": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"]
         },
-        "amounts":{
+        "amounts": {
           "AMOUNT TO PAY AFTER CUCET SCHOLARSHIP": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
         }
       }
-
     },
 
     "Biotechnology": {
@@ -29,10 +27,17 @@
       "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
 
       "table_02": {
-        "marks": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"],
-        "scholarships": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"],
-        "amounts": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+        "marks": {
+          "CUCET MARKS": [ "90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"]
+        },
+        "scholarships": {
+          "CUCET SCHOLARSHIP OFFERED": [   "102500 /- INR",   "51250 /- INR",   "41000 /- INR",   "30750 /- INR",   "25625 /- INR",   "15375 /- INR" ]
+        },
+        "amounts": {
+          "AMOUNT TO PAY AFTER CUCET SCHOLARSHIP": [   "NIL",   "51250 /- INR",   "61500 /- INR",   "71750 /- INR",   "76875 /- INR",   "87125 /- INR" ]
+        }
       }
+
     },
     "Biotechnology-Lateral-Entry": {
       "head": "Bachelor of Engineering (Biotechnology)- Lateral Entry",
@@ -41,10 +46,24 @@
       "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
 
       "table_02": {
-        "marks": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"],
-        "scholarships": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"],
-        "amounts": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+        "marks": {
+          "CUCET MARKS": [  "90.01 - 100",  "80 - 90",  "70 - 79.99",  "60 - 69.99",  "50 - 59.99",  "40 - 49.99"]
+        },
+        "scholarships": {
+          "CUCET SCHOLARSHIP OFFERED": [   "102650 /- INR",   "51325 /- INR",   "41060 /- INR",   "30795 /- INR",   "25662.5 /- INR",   "15397.5 /- INR" ]
+        },
+        "amounts": {
+          "AMOUNT TO PAY AFTER CUCET SCHOLARSHIP": [
+            "NIL",
+            "51325 /- INR",
+            "61590 /- INR",
+            "71855 /- INR",
+            "76987.5 /- INR",
+            "87252.5 /- INR"
+          ]
+        }
       }
+
     },
     "Computer-Science-Engineering-Lateral-Entry": {
       "head": "Bachelor of Engineering (Computer Science & Engineering) - Lateral Entry",
@@ -53,10 +72,38 @@
       "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
 
       "table_02": {
-        "marks": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"],
-        "scholarships": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"],
-        "amounts": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+        "marks": {
+          "CUCET MARKS": [
+            "90.01 - 100",
+            "80 - 90",
+            "70 - 79.99",
+            "60 - 69.99",
+            "50 - 59.99",
+            "40 - 49.99"
+          ]
+        },
+        "scholarships": {
+          "CUCET SCHOLARSHIP OFFERED": [
+            "136350 /- INR",
+            "68175 /- INR",
+            "54540 /- INR",
+            "40905 /- INR",
+            "34087.5 /- INR",
+            "20452.5 /- INR"
+          ]
+        },
+        "amounts": {
+          "AMOUNT TO PAY AFTER CUCET SCHOLARSHIP": [
+            "NIL",
+            "68175 /- INR",
+            "81810 /- INR",
+            "95445 /- INR",
+            "102263 /- INR",
+            "115898 /- INR"
+          ]
+        }
       }
+
     },
     "cs-Engineering-cs-Business-Systems": {
       "head": "Bachelor of Engineering (Computer Science and Engineering) (Computer Science and Business Systems) (In association with TCS)",
@@ -65,10 +112,38 @@
       "content_p": "The idea of luxury often conjures images of opulent mansions, lavish decor, and extravagant price tags. However, achieving a luxurious ambiance doesn't .....",
 
       "table_02": {
-        "marks": ["90.01 - 100", "80 - 90", "70 - 79.99", "60 - 69.99", "50 - 59.99", "40 - 49.99"],
-        "scholarships": ["120500 /- INR", "60250 /- INR", "48200 /- INR", "36150 /- INR", "30125 /- INR", "18075 /- INR"],
-        "amounts": ["NIL", "60250 /- INR", "72300 /- INR", "84350 /- INR", "90375 /- INR", "102425 /- INR"]
+        "marks": {
+          "CUCET MARKS": [
+            "90.01 - 100",
+            "80 - 90",
+            "70 - 79.99",
+            "60 - 69.99",
+            "50 - 59.99",
+            "40 - 49.99"
+          ]
+        },
+        "scholarships": {
+          "CUCET SCHOLARSHIP OFFERED": [
+            "125500 /- INR",
+            "62750 /- INR",
+            "50200 /- INR",
+            "37650 /- INR",
+            "31375 /- INR",
+            "18825 /- INR"
+          ]
+        },
+        "amounts": {
+          "AMOUNT TO PAY AFTER CUCET SCHOLARSHIP": [
+            "NIL",
+            "62750 /- INR",
+            "75300 /- INR",
+            "87850 /- INR",
+            "94125 /- INR",
+            "106675 /- INR"
+          ]
+        }
       }
+
     }
   }
 

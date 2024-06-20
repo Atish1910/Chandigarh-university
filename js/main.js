@@ -32,16 +32,21 @@
         let a = $(this).val()
         $('.form_deptart optgroup').addClass('d-none')
         $('.form_deptart optgroup[label="' + a + '"]').removeClass('d-none')
-      })
-
-
+    })
+    
+    
+    
+    // $('.course_01').on('change', function () {
+    //     let a = $(this).val()
+    //     $('.course_data').addClass('d-none')
+    //     $('.course_data').removeClass('d-none')
+    // })
 
     $('.course_01').on('change', function () {
         let a = $(this).val()
         $('.course_data').addClass('d-none')
-        $('.course_data').removeClass('d-none')
-    })
-
+        $('.course_data[label="' + a + '"]').removeClass('d-none')
+      })
 
     // counter in placement
     let q = 0;

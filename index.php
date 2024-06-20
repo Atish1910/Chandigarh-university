@@ -1,8 +1,8 @@
 <?php
   include 'link.php';
-  ob_start('ob_gzhandler');
-  date_default_timezone_set('Asia/Kolkata');
-  setcookie("utm_medium", isset($_GET['utm_medium']) ? $_GET['utm_medium'] : 'Direct', strtotime(date('Y-m-d H:i:s'))+1200);
+//   ob_start('ob_gzhandler');
+//   date_default_timezone_set('Asia/Kolkata');
+//   setcookie("utm_medium", isset($_GET['utm_medium']) ? $_GET['utm_medium'] : 'Direct', strtotime(date('Y-m-d H:i:s'))+1200);
   
   $a = file_get_contents('course_01.json');
   $b = json_decode($a, true);
@@ -296,7 +296,7 @@
                                             </div>
                                             <div class="col-md-12 mb-3">
                                                 <div class="form-group">
-                                                    <select class="form-select course_01 form_deptart" name="n_dept">
+                                                    <select class="form-select course_01  form_deptart" name="n_dept">
                                                         <option selected value="">Select Programme</option>
                                                         <optgroup label="engineering" class="d-none">
                                                             <?php 
@@ -315,21 +315,21 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 text-center nav_01 d-grid table_css">
+                                            <div class="col-md-12 text-center  nav_01 d-grid table_css">
                                                 <!-- Button trigger modal -->
                                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                                     data-bs-target="#exampleModal">View Program</button>
+                                                <!-- Modal -->
+                                                <div class="modal fade " id="exampleModal" tabindex="-1"
+                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <?php 
+                                                        $i =0;
                                                         foreach ($v as $k2 => $v2) {
                                                         // print_r($k2);
                                                     ?>
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
 
-                                                    <div class="modal-dialog course_data modal-lg d-none"
+                                                    <div class="modal-dialog course_data d-none modal-lg" label="<?= $k2;?>"
                                                         data-course="<?= $k2;?>">
-
                                                         <div class="modal-content">
                                                             <div class="modal-header bg-blue text-start">
                                                                 <h1 class="modal-title fs-5  text-white"
@@ -361,41 +361,37 @@
                                                                 <div class="">
                                                                     <h3 class="text-blue">CUCET PHASE I</h3>
                                                                     <table class="table table-bordered">
+                                                                        <?php
+                                                                        $i =0;
+                                                                        foreach (($v2['table_02']) as $k4 => $v4) {
+
+                                                                        ?>
                                                                         <thead>
                                                                             <tr>
                                                                                 <?php 
                                                                                     $i = 0;
-                                                                                    foreach (($v2['table_02']) as $k4 => $v4) {
                                                                                     foreach (($v4) as $k5 => $v5) {
-                                                                                    // print_r($k5);
                                                                                     ?>
                                                                                 <th><?= $k5;?></th>
                                                                                 <?php
-                                                                                    }
-                                                                                }
-                                                                                ?>
+                                                                                    $i++;}
+                                                                                    ?>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
-                                                                        <?php 
-                                                                            $i = 0;
-                                                                            foreach (($v5) as $k6 => $v6) {
-                                                                                print_r($v6);
-                                                                            ?>
+                                                                                <?php 
+                                                                                    foreach (($v5) as $k6 => $v6) {
+                                                                                        // print_r($v6);
+                                                                                    ?>
                                                                             <tr>
-                                                                            <?php 
-                                                                            foreach (($v4) as $k5 => $v5) {
-                                                                                // print_r($v6);
-                                                                            ?>
-                                                                                <td><?= $v6;?></td>
-                                                                                <?php
-                                                                            }
-                                                                            ?>
+                                                                                    <td><?= $v6;?></td>
                                                                             </tr>
-                                                                            <?php
-                                                                            $i++;}
-                                                                        ?>
+                                                                                    <?php
+                                                                                    $i++;}
+                                                                                ?>
                                                                         </tbody>
+                                                                        <?php 
+                                                                        }?>
                                                                     </table>
 
                                                                 </div>
@@ -423,10 +419,10 @@
                                                         </div>
 
                                                     </div>
-                                                </div>
                                                 <?php 
-                                                    }
+                                                    $i++;}
                                                 ?>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

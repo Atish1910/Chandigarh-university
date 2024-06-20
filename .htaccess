@@ -57,9 +57,9 @@
 
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
-RewriteCond %{https} off  
-RewriteRule ^(.*)$ https://gladowl-chandigarh.netlify.app/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
+#RewriteCond %{https} off  
+#RewriteRule ^(.*)$ https://gladowl-chandigarh.netlify.app/$1 [R=301,L]
 
 RewriteEngine On
 
